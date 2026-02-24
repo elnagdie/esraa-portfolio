@@ -1,0 +1,104 @@
+import { useRef } from 'react';
+import { motion, useInView } from 'framer-motion';
+import { useNavigate } from 'react-router-dom';
+import { experiments } from '../data/experiments';
+import TagBadge from './TagBadge';
+
+function ExperimentCard({ exp, index }) {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-50px' });
+  const navigate = useNavigate();
+
+  return (
+    <motion.article
+      ref={ref}
+      initial={{ opacity: 0, y: 24 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.6, delay: index * 0.08 }}
+      onClick={() => navigate(`/experiment/${exp.id}`)}
+      className="group border border-cream/10 bg-navy-light/30 p-6 hover:border-amber-lab/30 hover:bg-navy-light/60 transition-all duration-400 cursor-pointer relative overflow-hidden"
+    >
+      {/* Hover accent line */}
+      <div className="absolute top-0 left-0 right-0 h-px bg-amber-lab scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left" />
+
+      {/* Experiment number */}
+      <div className="font-mono text-[9px] tracking-[0.3em] uppercase text-amber-lab/60 mb-4">
+        {exp.number}
+      </div>
+
+      {/* Company */}
+      <div className="font-mono text-[10px] tracking-[0.15em] uppercase text-cream-dark mb-2">
+        {exp.company}
+      </div>
+
+      {/* Title */}
+      <h3 className="font-serif text-xl text-cream mb-3 leading-snug group-hover:text-cream transition-colors">
+        {exp.title}
+      </h3>
+
+      {/* Hypothesis */}
+      <p className="font-sans text-sm text-cream-muted/70 leading-relaxed mb-6 line-clamp-2">
+        <span className="font-mono text-[9px] tracking-wider uppercase text-teal-lab mr-2">H:</span>
+        {exp.hypothesis}
+      </p>
+
+      {/* Key metric */}
+      <div className="mb-5">
+        <div className="font-serif text-4xl text-amber-lab leading-none mb-0.5">
+          {exp.keyMetric}
+        </div>
+        <div className="font-mono text-[9px] tracking-wider uppercase text-cream-dark">
+          {exp.keyMetricLabel}
+        </div>
+      </div>
+
+      {/* Tags */}
+      <div className="flex flex-wrap gap-1.5 mb-4">
+        {exp.tags.map((tag) => (
+          <TagBadge key={tag} label={tag} />
+        ))}
+      </div>
+
+      {/* View link */}
+      <div className="flex items-center gap-2 mt-2">
+        <span className="font-mono text-[10px] tracking-wider uppercase text-cream-dark/0 group-hover:text-amber-lab transition-all duration-300">
+          View Experiment →
+        </span>
+      </div>
+    </motion.article>
+  );
+}
+
+export default function Experiments() {
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: '-80px' });
+
+  return (
+    <section id="experiments" className="py-24 md:py-32 px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
+      {/* Header */}
+      <motion.div
+        ref={ref}
+        initial={{ opacity: 0, y: 20 }}
+        animate={isInView ? { opacity: 1, y: 0 } : {}}
+        transition={{ duration: 0.7 }}
+        className="mb-16"
+      >
+        <div className="flex items-center gap-3 mb-4">
+          <span className="w-8 h-px bg-amber-lab opacity-60" />
+          <span className="section-label">Experiments</span>
+        </div>
+        <h2 className="section-headline mb-3">Hypothesize. Test. Ship. Measure.</h2>
+        <p className="font-sans text-base text-cream-muted max-w-xl">
+          Each project started with a question. Here's what I found.
+        </p>
+      </motion.div>
+
+      {/* Cards grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+        {experiments.map((exp, i) => (
+          <ExperimentCard key={exp.id} exp={exp} index={i} />
+        ))}
+      </div>
+    </section>
+  );
+}
