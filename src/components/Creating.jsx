@@ -31,11 +31,11 @@ export default function Creating() {
         {/* Header */}
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">
-            <span className="w-8 h-px bg-amber-lab opacity-60" />
+            <span className="w-8 h-px bg-amber-text/40" />
             <span className="section-label">Field Dispatches</span>
           </div>
           <h2 className="section-headline mb-4">Building in Public</h2>
-          <p className="font-sans text-base md:text-lg text-cream-muted max-w-2xl leading-relaxed">
+          <p className="font-sans text-base md:text-lg text-navy/55 max-w-2xl leading-relaxed">
             I create content about AI, the future of work, and career growth — because I learn best by building and sharing.
             Follow along:
           </p>
@@ -52,13 +52,13 @@ export default function Creating() {
               initial={{ opacity: 0, y: 16 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: 0.2 + i * 0.1 }}
-              className="group border border-cream/10 p-5 hover:border-amber-lab/30 transition-all duration-300 block relative overflow-hidden"
+              className="group border border-navy/10 bg-paper-dim p-5 hover:border-amber-text/30 hover:bg-paper-dark transition-all duration-300 block relative overflow-hidden"
             >
-              <div className="absolute top-0 left-0 right-0 h-px bg-amber-lab scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left" />
-              <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-cream-dark mb-1">{channel.platform}</div>
-              <div className="font-serif text-lg text-cream mb-1 group-hover:text-amber-lab transition-colors">{channel.handle}</div>
-              <div className="font-sans text-sm text-cream-muted/70">{channel.description}</div>
-              <div className="font-mono text-[10px] tracking-wider uppercase text-amber-lab/0 group-hover:text-amber-lab transition-colors mt-3">
+              <div className="absolute top-0 left-0 right-0 h-px bg-amber-text scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left" />
+              <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-navy/35 mb-1">{channel.platform}</div>
+              <div className="font-serif text-lg text-navy mb-1 group-hover:text-amber-text transition-colors">{channel.handle}</div>
+              <div className="font-sans text-sm text-navy/50">{channel.description}</div>
+              <div className="font-mono text-[10px] tracking-wider uppercase text-navy/0 group-hover:text-amber-text transition-colors mt-3">
                 Visit →
               </div>
             </motion.a>

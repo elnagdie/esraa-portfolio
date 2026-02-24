@@ -5,11 +5,11 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    background-color: #0a1628;
+    background-color: #f5f0e8;
   }
 
   body {
-    @apply font-sans text-cream bg-navy;
+    @apply font-sans text-navy bg-paper;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
@@ -17,8 +17,8 @@
   }
 
   ::selection {
-    background: rgba(212, 168, 83, 0.25);
-    color: #f5f0e8;
+    background: rgba(212, 168, 83, 0.3);
+    color: #0a1628;
   }
 
   * {
@@ -32,11 +32,11 @@
 
 @layer components {
   .section-label {
-    @apply font-mono text-xs tracking-[0.22em] uppercase text-amber-lab;
+    @apply font-mono text-xs tracking-[0.22em] uppercase text-teal-dim;
   }
 
   .section-headline {
-    @apply font-serif text-4xl md:text-5xl text-cream leading-tight;
+    @apply font-serif text-4xl md:text-5xl text-navy leading-tight;
   }
 
   .tag {
@@ -44,29 +44,29 @@
   }
 
   .tag-pm {
-    @apply tag border-amber-lab/40 text-amber-lab bg-amber-lab/5;
+    @apply tag border-amber-text/40 text-amber-text;
   }
 
   .tag-pmm {
-    @apply tag border-teal-lab/40 text-teal-lab bg-teal-lab/5;
+    @apply tag border-teal-dim/40 text-teal-dim;
   }
 
   .tag-tpm {
-    @apply tag border-blue-400/40 text-blue-300 bg-blue-400/5;
+    @apply tag border-blue-600/30 text-blue-700;
   }
 
   .tag-founder {
-    @apply tag border-purple-400/40 text-purple-300 bg-purple-400/5;
+    @apply tag border-purple-600/30 text-purple-700;
   }
 
   .tag-default {
-    @apply tag border-cream-muted/30 text-cream-muted bg-cream/5;
+    @apply tag border-navy/20 text-navy/50;
   }
 
   .ekg-line {
     position: relative;
     height: 1px;
-    background: linear-gradient(90deg, transparent 0%, rgba(212, 168, 83, 0.15) 50%, transparent 100%);
+    background: linear-gradient(90deg, transparent 0%, rgba(10, 22, 40, 0.08) 50%, transparent 100%);
     overflow: hidden;
   }
 
@@ -77,18 +77,18 @@
     left: -40%;
     width: 40%;
     height: 1px;
-    background: linear-gradient(90deg, transparent, rgba(212, 168, 83, 0.9), transparent);
+    background: linear-gradient(90deg, transparent, rgba(138, 98, 24, 0.5), transparent);
     animation: scanLine 5s linear infinite;
   }
 
   .btn-primary {
-    @apply font-mono text-xs tracking-[0.15em] uppercase px-6 py-3 border border-amber-lab text-amber-lab
-           hover:bg-amber-lab hover:text-navy transition-all duration-300;
+    @apply font-mono text-xs tracking-[0.15em] uppercase px-6 py-3 border border-amber-text text-amber-text
+           hover:bg-amber-text hover:text-paper transition-all duration-300;
   }
 
   .btn-secondary {
-    @apply font-mono text-xs tracking-[0.15em] uppercase px-6 py-3 border border-cream-muted/30 text-cream-muted
-           hover:border-cream-muted hover:text-cream transition-all duration-300;
+    @apply font-mono text-xs tracking-[0.15em] uppercase px-6 py-3 border border-navy/30 text-navy/50
+           hover:border-navy hover:text-navy transition-all duration-300;
   }
 }
 
@@ -109,15 +109,15 @@
 }
 
 ::-webkit-scrollbar-track {
-  background: #0a1628;
+  background: #f5f0e8;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: rgba(212, 168, 83, 0.25);
+  background: rgba(10, 22, 40, 0.2);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(212, 168, 83, 0.5);
+  background: rgba(10, 22, 40, 0.4);
 }
 
 /* Grain texture */
@@ -130,7 +130,7 @@
   height: 100%;
   pointer-events: none;
   z-index: 9999;
-  opacity: 0.03;
+  opacity: 0.04;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='1'/%3E%3C/svg%3E");
   background-repeat: repeat;
   background-size: 200px 200px;

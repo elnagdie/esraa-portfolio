@@ -16,38 +16,38 @@ function ExperimentCard({ exp, index }) {
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: index * 0.08 }}
       onClick={() => navigate(`/experiment/${exp.id}`)}
-      className="group border border-cream/10 bg-navy-light/30 p-6 hover:border-amber-lab/30 hover:bg-navy-light/60 transition-all duration-400 cursor-pointer relative overflow-hidden"
+      className="group border border-navy/10 bg-paper-dim p-6 hover:border-amber-text/30 hover:bg-paper-dark transition-all duration-400 cursor-pointer relative overflow-hidden"
     >
       {/* Hover accent line */}
-      <div className="absolute top-0 left-0 right-0 h-px bg-amber-lab scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left" />
+      <div className="absolute top-0 left-0 right-0 h-px bg-amber-text scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left" />
 
       {/* Experiment number */}
-      <div className="font-mono text-[9px] tracking-[0.3em] uppercase text-amber-lab/60 mb-4">
+      <div className="font-mono text-[9px] tracking-[0.3em] uppercase text-amber-text/50 mb-4">
         {exp.number}
       </div>
 
       {/* Company */}
-      <div className="font-mono text-[10px] tracking-[0.15em] uppercase text-cream-dark mb-2">
+      <div className="font-mono text-[10px] tracking-[0.15em] uppercase text-navy/35 mb-2">
         {exp.company}
       </div>
 
       {/* Title */}
-      <h3 className="font-serif text-xl text-cream mb-3 leading-snug group-hover:text-cream transition-colors">
+      <h3 className="font-serif text-xl text-navy mb-3 leading-snug">
         {exp.title}
       </h3>
 
       {/* Hypothesis */}
-      <p className="font-sans text-sm text-cream-muted/70 leading-relaxed mb-6 line-clamp-2">
-        <span className="font-mono text-[9px] tracking-wider uppercase text-teal-lab mr-2">H:</span>
+      <p className="font-sans text-sm text-navy/50 leading-relaxed mb-6 line-clamp-2">
+        <span className="font-mono text-[9px] tracking-wider uppercase text-teal-dim mr-2">H:</span>
         {exp.hypothesis}
       </p>
 
       {/* Key metric */}
       <div className="mb-5">
-        <div className="font-serif text-4xl text-amber-lab leading-none mb-0.5">
+        <div className="font-serif text-4xl text-amber-text leading-none mb-0.5">
           {exp.keyMetric}
         </div>
-        <div className="font-mono text-[9px] tracking-wider uppercase text-cream-dark">
+        <div className="font-mono text-[9px] tracking-wider uppercase text-navy/35">
           {exp.keyMetricLabel}
         </div>
       </div>
@@ -60,8 +60,8 @@ function ExperimentCard({ exp, index }) {
       </div>
 
       {/* View link */}
-      <div className="flex items-center gap-2 mt-2">
-        <span className="font-mono text-[10px] tracking-wider uppercase text-cream-dark/0 group-hover:text-amber-lab transition-all duration-300">
+      <div className="mt-2">
+        <span className="font-mono text-[10px] tracking-wider uppercase text-navy/0 group-hover:text-amber-text transition-all duration-300">
           View Experiment →
         </span>
       </div>
@@ -84,11 +84,11 @@ export default function Experiments() {
         className="mb-16"
       >
         <div className="flex items-center gap-3 mb-4">
-          <span className="w-8 h-px bg-amber-lab opacity-60" />
+          <span className="w-8 h-px bg-amber-text/40" />
           <span className="section-label">Experiments</span>
         </div>
         <h2 className="section-headline mb-3">Hypothesize. Test. Ship. Measure.</h2>
-        <p className="font-sans text-base text-cream-muted max-w-xl">
+        <p className="font-sans text-base text-navy/50 max-w-xl">
           Each project started with a question. Here's what I found.
         </p>
       </motion.div>

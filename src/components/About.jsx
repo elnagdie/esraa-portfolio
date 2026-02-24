@@ -1,5 +1,4 @@
-import { motion } from 'framer-motion';
-import { useInView } from 'framer-motion';
+import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
 const skills = [
@@ -25,12 +24,12 @@ function TraitBar({ label, value, index }) {
   return (
     <div ref={ref} className="mb-4">
       <div className="flex items-center justify-between mb-1.5">
-        <span className="font-mono text-[10px] tracking-wider uppercase text-cream-muted">{label}</span>
-        <span className="font-mono text-[10px] text-amber-lab">{value}%</span>
+        <span className="font-mono text-[10px] tracking-wider uppercase text-navy/45">{label}</span>
+        <span className="font-mono text-[10px] text-amber-text">{value}%</span>
       </div>
-      <div className="h-px bg-navy-mid relative overflow-hidden">
+      <div className="h-px bg-navy/10 relative overflow-hidden">
         <motion.div
-          className="h-full bg-amber-lab/50"
+          className="h-full bg-amber-lab/60"
           initial={{ width: 0 }}
           animate={{ width: isInView ? `${value}%` : 0 }}
           transition={{ duration: 1.2, delay: index * 0.1, ease: [0.25, 0.1, 0.25, 1] }}
@@ -55,7 +54,7 @@ export default function About() {
         {/* Section header */}
         <div className="mb-16">
           <div className="flex items-center gap-3 mb-4">
-            <span className="w-8 h-px bg-amber-lab opacity-60" />
+            <span className="w-8 h-px bg-amber-text/40" />
             <span className="section-label">Field Notes</span>
           </div>
           <h2 className="section-headline">The Origin Story</h2>
@@ -79,7 +78,7 @@ export default function About() {
                 initial={{ opacity: 0, y: 16 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.6, delay: 0.1 + i * 0.07 }}
-                className="font-sans text-base md:text-lg text-cream-muted leading-relaxed"
+                className="font-sans text-base md:text-lg text-navy/60 leading-relaxed"
               >
                 {paragraph}
               </motion.p>
@@ -92,13 +91,13 @@ export default function About() {
               initial={{ opacity: 0, y: 16 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.7, delay: 0.3 }}
-              className="border border-cream/10 p-6 sticky top-24"
+              className="border border-navy/10 bg-paper-dim p-6 sticky top-24"
             >
               {/* Header */}
-              <div className="border-b border-cream/10 pb-4 mb-5">
-                <div className="font-mono text-[9px] tracking-[0.25em] uppercase text-amber-lab mb-1">Lab Profile</div>
-                <div className="font-serif text-lg text-cream">The Planner / Strategist</div>
-                <div className="font-mono text-[9px] tracking-wider text-cream-dark mt-1">PRIOS Assessment, 2025</div>
+              <div className="border-b border-navy/10 pb-4 mb-5">
+                <div className="font-mono text-[9px] tracking-[0.25em] uppercase text-amber-text mb-1">Lab Profile</div>
+                <div className="font-serif text-lg text-navy">The Planner / Strategist</div>
+                <div className="font-mono text-[9px] tracking-wider text-navy/35 mt-1">PRIOS Assessment, 2025</div>
               </div>
 
               {/* Trait bars */}
@@ -109,11 +108,11 @@ export default function About() {
               </div>
 
               {/* Trained In */}
-              <div className="border-t border-cream/10 pt-4 mb-5">
-                <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-cream-dark mb-3">Trained In</div>
+              <div className="border-t border-navy/10 pt-4 mb-5">
+                <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-navy/35 mb-3">Trained In</div>
                 <ul className="space-y-1.5">
                   {skills[0].items.map((item) => (
-                    <li key={item} className="font-mono text-[10px] text-cream-muted leading-relaxed">
+                    <li key={item} className="font-mono text-[10px] text-navy/55 leading-relaxed">
                       {item}
                     </li>
                   ))}
@@ -121,11 +120,11 @@ export default function About() {
               </div>
 
               {/* Tools */}
-              <div className="border-t border-cream/10 pt-4">
-                <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-cream-dark mb-3">Tools of the Trade</div>
+              <div className="border-t border-navy/10 pt-4">
+                <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-navy/35 mb-3">Tools of the Trade</div>
                 <div className="flex flex-wrap gap-1.5">
                   {tools.map((tool) => (
-                    <span key={tool} className="font-mono text-[9px] tracking-wide text-cream-muted border border-cream/10 px-2 py-0.5 rounded-sm">
+                    <span key={tool} className="font-mono text-[9px] tracking-wide text-navy/50 border border-navy/12 px-2 py-0.5 rounded-sm bg-paper">
                       {tool}
                     </span>
                   ))}
@@ -140,19 +139,19 @@ export default function About() {
           initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : {}}
           transition={{ duration: 0.7, delay: 0.5 }}
-          className="mt-16 pt-8 border-t border-cream/10"
+          className="mt-16 pt-8 border-t border-navy/10"
         >
-          <div className="font-mono text-[9px] tracking-[0.25em] uppercase text-cream-dark mb-6 text-center">
+          <div className="font-mono text-[9px] tracking-[0.25em] uppercase text-navy/35 mb-6 text-center">
             Companies I've Worked With
           </div>
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-3">
             {companies.map((company, i) => (
               <span key={company} className="flex items-center gap-8">
-                <span className="font-mono text-sm tracking-[0.15em] uppercase text-cream-muted/60 hover:text-cream-muted transition-colors">
+                <span className="font-mono text-sm tracking-[0.15em] uppercase text-navy/35 hover:text-navy/60 transition-colors">
                   {company}
                 </span>
                 {i < companies.length - 1 && (
-                  <span className="font-mono text-cream/20">·</span>
+                  <span className="font-mono text-navy/20">·</span>
                 )}
               </span>
             ))}
