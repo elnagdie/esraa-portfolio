@@ -77,7 +77,7 @@ PRIOS Assessment, 2025
 Jira, Figma, Miro, Amplitude, Google Analytics, Looker
 
 **AI & Automation:**
-Claude Code, Lovable, n8n, Perplexity
+Claude Code, Lovable, n8n
 
 **Companies I've Worked With:**
 MasterClass, Yelp, Altus Group, Propel Holdings

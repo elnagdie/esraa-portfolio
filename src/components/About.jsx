@@ -9,7 +9,7 @@ const trainedIn = [
 
 const toolGroups = [
   { label: 'Product & Analytics', items: ['Jira', 'Figma', 'Miro', 'Amplitude', 'Google Analytics', 'Looker'] },
-  { label: 'AI & Automation', items: ['Claude Code', 'Lovable', 'n8n', 'Perplexity'] },
+  { label: 'AI & Automation', items: ['Claude Code', 'Lovable', 'n8n'] },
 ];
 
 const traits = [
