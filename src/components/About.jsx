@@ -65,13 +65,15 @@ export default function About() {
           {/* Left — narrative */}
           <div className="lg:col-span-3 space-y-6">
             {[
-              `I'm the kind of person who needs to understand how things work — all the way down.`,
-              `I studied Biochemistry at the University of Toronto. I loved it — not for the career path, but for the way of thinking. Form hypotheses. Test them. Follow the evidence. Think in systems.`,
-              `My first job in tech was answering phones at a call centre at Propel Holdings. I talked to customers all day — hearing what frustrated them, what confused them, what they wished the product could do. Then I got curious about the loan management system itself. Why was it built this way? What were the constraints? I learned it inside out, which earned me a move to Business Analyst, then Scrum Master leading a team of 8 engineers.`,
-              `That's been my pattern ever since: start with the customer, understand the system, then build something better.`,
-              `At Altus Group, I was the product marketing function for a platform entering a market dominated by incumbents. I interviewed customers, developed segmented positioning for three buyer personas, created 30+ help articles and 10 videos, and trained Sales on persona-specific selling. The platform grew from 0 to 750+ companies.`,
-              `At Yelp, I learned the power of experimentation — partnering with Data Science to build predictive models and running A/B tests that drove a 19% engagement lift.`,
-              `At MasterClass, I brought it all together: leading cross-functional teams of 10+, shipping enterprise learning programs, developing GTM strategy, and driving $900K in revenue impact.`,
+              `I've always been a translator.`,
+              `As a teenager and newcomer to Canada, I translated for my mom at doctor's appointments, turning medical jargon into decisions we could act on. That instinct never left.`,
+              `I studied Biochemistry at the University of Toronto. I loved it not for the career path, but for the way of thinking. Form hypotheses. Test them. Follow the evidence. Think in systems. I led research and co-authored a published paper, translating questions into experiments and experiments into findings.`,
+              `My first job in tech was answering phones at a call centre at Propel Holdings. I talked to customers all day, hearing their bugs, feature requests, and what they wished the product could do. I got curious about the online application flow and customer dashboard I was helping them navigate every day. I understood the customer web experience inside out, which earned me a move to Business Analyst, then Scrum Master leading a team of 8 engineers.`,
+              `That's been my pattern ever since: start with the customer, understand the system, then translate complexity into something people can actually use.`,
+              `At Altus Group, I was the Product Owner on a commercial real estate data platform, and with no PMM function, I built that too. I interviewed customers, developed segmented positioning for three buyer personas, created 30+ help articles, and trained Sales on persona-specific selling. The platform grew from 0 to 750+ companies and 8,000+ users.`,
+              `At Yelp, I learned the power of experimentation, partnering with Data Science to build predictive models and running A/B tests that drove a 19% engagement lift.`,
+              `At MasterClass, I brought it all together: leading cross-functional teams of 10+, shipping enterprise learning programs with completion rates 4x the existing product, building an internal tool that cut content curation by 98%, developing GTM strategy, and beating revenue targets by 10% YoY.`,
+              `I've translated across languages, industries, and audiences. From Arabic to English, from biochemistry labs to engineering sprints, from technical complexity to business outcomes. I'm a first-generation Canadian, Egyptian by origin, fluent in Arabic and English. I lead with active listening and empathy. I thrive in the space between chaos and clarity, building the systems that turn one into the other.`,
             ].map((paragraph, i) => (
               <motion.p
                 key={i}
