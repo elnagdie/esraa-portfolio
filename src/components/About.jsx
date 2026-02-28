@@ -1,18 +1,23 @@
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
 
-const skills = [
-  { category: 'Trained In', items: ['Biochemistry (HBSc, UofT)', 'Advanced Product Management', 'Certified Scrum Master', 'Pragmatic Marketing Certified', 'Business Analysis (UofT)'] },
+const trainedIn = [
+  'Biochemistry (HBSc, UofT)',
+  'Advanced Product Management (Product Faculty)',
+  'Pragmatic Institute, PMC Level I',
 ];
 
-const tools = ['Figma', 'Miro', 'Jira', 'Asana', 'Mixpanel', 'Google Analytics', 'Tableau', 'SQL', 'HTML/CSS', 'JavaScript', 'React', 'Claude', 'ChatGPT', 'Perplexity'];
+const toolGroups = [
+  { label: 'Product & Analytics', items: ['Jira', 'Figma', 'Miro', 'Amplitude', 'Google Analytics', 'Looker'] },
+  { label: 'AI & Automation', items: ['Claude Code', 'Lovable', 'n8n', 'Perplexity'] },
+];
 
 const traits = [
   { label: 'Systematic', value: 92 },
   { label: 'Driven', value: 89 },
   { label: 'Logical', value: 82 },
-  { label: 'Growth-Seeking', value: 75 },
-  { label: 'Practical', value: 72 },
+  { label: 'Visionary', value: 75 },
+  { label: 'Empathetic', value: 60 },
 ];
 
 const companies = ['MasterClass', 'Yelp', 'Altus Group', 'Propel Holdings'];
@@ -98,7 +103,7 @@ export default function About() {
               {/* Header */}
               <div className="border-b border-navy/10 pb-4 mb-5">
                 <div className="font-mono text-[9px] tracking-[0.25em] uppercase text-amber-text mb-1">Lab Profile</div>
-                <div className="font-serif text-lg text-navy">The Planner / Strategist</div>
+                <div className="font-serif text-lg text-navy">The Planner / Translator</div>
                 <div className="font-mono text-[9px] tracking-wider text-navy/35 mt-1">PRIOS Assessment, 2025</div>
               </div>
 
@@ -109,11 +114,21 @@ export default function About() {
                 ))}
               </div>
 
+              {/* Languages */}
+              <div className="border-t border-navy/10 pt-4 mb-5">
+                <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-navy/35 mb-3">Languages</div>
+                <div className="flex gap-3">
+                  {['English', 'Arabic'].map((lang) => (
+                    <span key={lang} className="font-mono text-[10px] text-navy/55">{lang}</span>
+                  ))}
+                </div>
+              </div>
+
               {/* Trained In */}
               <div className="border-t border-navy/10 pt-4 mb-5">
                 <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-navy/35 mb-3">Trained In</div>
                 <ul className="space-y-1.5">
-                  {skills[0].items.map((item) => (
+                  {trainedIn.map((item) => (
                     <li key={item} className="font-mono text-[10px] text-navy/55 leading-relaxed">
                       {item}
                     </li>
@@ -121,17 +136,19 @@ export default function About() {
                 </ul>
               </div>
 
-              {/* Tools */}
-              <div className="border-t border-navy/10 pt-4">
-                <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-navy/35 mb-3">Tools of the Trade</div>
-                <div className="flex flex-wrap gap-1.5">
-                  {tools.map((tool) => (
-                    <span key={tool} className="font-mono text-[9px] tracking-wide text-navy/50 border border-navy/12 px-2 py-0.5 rounded-sm bg-paper">
-                      {tool}
-                    </span>
-                  ))}
+              {/* Tool groups */}
+              {toolGroups.map((group) => (
+                <div key={group.label} className="border-t border-navy/10 pt-4 mb-5 last:mb-0">
+                  <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-navy/35 mb-3">{group.label}</div>
+                  <div className="flex flex-wrap gap-1.5">
+                    {group.items.map((tool) => (
+                      <span key={tool} className="font-mono text-[9px] tracking-wide text-navy/50 border border-navy/12 px-2 py-0.5 rounded-sm bg-paper">
+                        {tool}
+                      </span>
+                    ))}
+                  </div>
                 </div>
-              </div>
+              ))}
             </motion.div>
           </div>
         </div>

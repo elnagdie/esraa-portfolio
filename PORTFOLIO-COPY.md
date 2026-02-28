@@ -56,25 +56,28 @@ At MasterClass, I brought it all together: leading cross-functional teams of 10+
 
 I've translated across languages, industries, and audiences. From Arabic to English, from biochemistry labs to engineering sprints, from technical complexity to business outcomes. I'm a first-generation Canadian, Egyptian by origin, fluent in Arabic and English. I lead with active listening and empathy. I thrive in the space between chaos and clarity, building the systems that turn one into the other.
 
-### Lab Profile — The Planner / Strategist
+### Lab Profile — The Planner / Translator
 PRIOS Assessment, 2025
 
 **Traits:**
 - Systematic: 92%
 - Driven: 89%
 - Logical: 82%
-- Growth-Seeking: 75%
-- Practical: 72%
+- Visionary: 75%
+- Empathetic: 60%
+
+**Languages:** English, Arabic
 
 **Trained In:**
 - Biochemistry (HBSc, UofT)
-- Advanced Product Management
-- Certified Scrum Master
-- Pragmatic Marketing Certified
-- Business Analysis (UofT)
+- Advanced Product Management (Product Faculty)
+- Pragmatic Institute, PMC Level I
 
-**Tools of the Trade:**
-Figma, Miro, Jira, Asana, Mixpanel, Google Analytics, Tableau, SQL, HTML/CSS, JavaScript, React, Claude, ChatGPT, Perplexity
+**Product & Analytics:**
+Jira, Figma, Miro, Amplitude, Google Analytics, Looker
+
+**AI & Automation:**
+Claude Code, Lovable, n8n, Perplexity
 
 **Companies I've Worked With:**
 MasterClass, Yelp, Altus Group, Propel Holdings
