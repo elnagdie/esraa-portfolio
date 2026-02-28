@@ -1,16 +1,39 @@
-# React + Vite
+# Esraa Elnagdi — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal portfolio site built around the idea that great product work follows the scientific method: hypothesize, test, ship, measure.
 
-Currently, two official plugins are available:
+**Live site:** [esraa-elnagdi-portfolio.netlify.app](https://esraa-elnagdi-portfolio.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What's inside
 
-## React Compiler
+Four case studies presented as experiments, each with a hypothesis, method, results, and key finding:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **EXP-001** — MasterClass Programs: Selling structured learning to enterprises
+- **EXP-002** — MasterClass Custom Playlists: Eliminating engineering dependency from a content workflow
+- **EXP-003** — Altus Data Studio: Segmented positioning for a fragmented market
+- **EXP-004** — Yelp Experimentation: Finding what actually drives business owner engagement
 
-## Expanding the ESLint configuration
+## Built with
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React + Vite
+- Tailwind CSS
+- Framer Motion
+- React Router
+- Deployed on Netlify
+
+## Running locally
+
+```bash
+npm install
+npm run dev
+```
+
+The site will be available at `http://localhost:5173`.
+
+## Building for production
+
+```bash
+npm run build
+```
+
+Output goes to the `dist/` folder.
