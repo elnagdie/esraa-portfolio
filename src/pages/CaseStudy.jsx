@@ -11,7 +11,7 @@ export default function CaseStudy() {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, []);
+  }, [id]);
 
   if (!exp) {
     return (
@@ -69,89 +69,89 @@ export default function CaseStudy() {
               <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-navy/35 mb-0.5">Timeline</div>
               <div className="font-sans text-sm text-navy/55">{exp.timeline}</div>
             </div>
-            {exp.externalLink && (
-              <div>
-                <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-navy/35 mb-0.5">Live</div>
-                <a
-                  href={exp.externalLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="font-sans text-sm text-amber-text hover:text-amber-dim transition-colors"
-                >
-                  {exp.externalLinkLabel} →
-                </a>
-              </div>
-            )}
           </div>
         </div>
       </div>
 
       {/* Body */}
       <div className="px-6 md:px-12 lg:px-20 py-12 max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-          {/* Main content */}
-          <div className="lg:col-span-2 space-y-12">
-            {/* Hypothesis */}
-            <section>
-              <div className="flex items-center gap-3 mb-4">
-                <span className="font-mono text-[9px] tracking-[0.3em] uppercase text-teal-dim">Hypothesis</span>
-                <span className="flex-1 h-px bg-navy/10" />
-              </div>
-              <p className="font-serif text-xl md:text-2xl text-navy/80 leading-relaxed italic">
-                "{exp.hypothesis}"
-              </p>
-            </section>
-
-            {/* Method */}
-            <section>
-              <div className="flex items-center gap-3 mb-6">
-                <span className="font-mono text-[9px] tracking-[0.3em] uppercase text-teal-dim">Method</span>
-                <span className="flex-1 h-px bg-navy/10" />
-              </div>
-              <ol className="space-y-4">
-                {exp.method.map((step, i) => (
-                  <li key={i} className="flex gap-4">
-                    <span className="font-mono text-[10px] tracking-wider text-amber-text/50 pt-0.5 shrink-0 w-5">
-                      {String(i + 1).padStart(2, '0')}
-                    </span>
-                    <p className="font-sans text-sm md:text-base text-navy/60 leading-relaxed">{step}</p>
-                  </li>
-                ))}
-              </ol>
-            </section>
-
-            {/* Key Finding */}
-            <section>
-              <div className="flex items-center gap-3 mb-4">
-                <span className="font-mono text-[9px] tracking-[0.3em] uppercase text-teal-dim">Key Finding</span>
-                <span className="flex-1 h-px bg-navy/10" />
-              </div>
-              <div className="border-l-2 border-amber-lab/50 pl-5">
-                <p className="font-sans text-base md:text-lg text-navy/60 leading-relaxed">
-                  {exp.keyFinding}
-                </p>
-              </div>
-            </section>
-          </div>
-
-          {/* Results sidebar */}
-          <div className="lg:col-span-1">
-            <div className="border border-navy/10 bg-paper-dim p-6 sticky top-24">
-              <div className="font-mono text-[9px] tracking-[0.3em] uppercase text-amber-text mb-6">Results</div>
-              <div className="space-y-6">
-                {exp.results.map((result, i) => (
-                  <div key={i} className="border-b border-navy/10 pb-5 last:border-0 last:pb-0">
-                    <div className="font-serif text-3xl text-amber-text leading-none mb-1">
-                      {result.metric}
-                    </div>
-                    <div className="font-mono text-[9px] tracking-wider uppercase text-navy/40 leading-relaxed">
-                      {result.label}
-                    </div>
-                  </div>
-                ))}
-              </div>
+        <div className="max-w-3xl space-y-14">
+          {/* The Problem */}
+          <section>
+            <div className="flex items-center gap-3 mb-4">
+              <span className="font-mono text-[9px] tracking-[0.3em] uppercase text-teal-dim">The Problem</span>
+              <span className="flex-1 h-px bg-navy/10" />
             </div>
-          </div>
+            <div className="space-y-4">
+              {exp.problem.split('\n\n').map((para, i) => (
+                <p key={i} className="font-sans text-sm md:text-base text-navy/60 leading-relaxed">
+                  {para}
+                </p>
+              ))}
+            </div>
+          </section>
+
+          {/* Hypothesis */}
+          <section>
+            <div className="flex items-center gap-3 mb-4">
+              <span className="font-mono text-[9px] tracking-[0.3em] uppercase text-teal-dim">Hypothesis</span>
+              <span className="flex-1 h-px bg-navy/10" />
+            </div>
+            <p className="font-serif text-xl md:text-2xl text-navy/80 leading-relaxed italic">
+              "{exp.hypothesis}"
+            </p>
+          </section>
+
+          {/* Method */}
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="font-mono text-[9px] tracking-[0.3em] uppercase text-teal-dim">Method</span>
+              <span className="flex-1 h-px bg-navy/10" />
+            </div>
+            <div className="space-y-6">
+              {exp.method.map((step, i) => (
+                <div key={i}>
+                  <p className="font-sans text-sm md:text-base text-navy/60 leading-relaxed">
+                    <span className="font-semibold text-navy/80">{step.phase}: </span>
+                    {step.content}
+                  </p>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Results */}
+          <section>
+            <div className="flex items-center gap-3 mb-6">
+              <span className="font-mono text-[9px] tracking-[0.3em] uppercase text-teal-dim">Results</span>
+              <span className="flex-1 h-px bg-navy/10" />
+            </div>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+              {exp.results.map((result, i) => (
+                <div key={i} className="border border-navy/10 bg-paper-dim p-4">
+                  <div className="font-serif text-2xl md:text-3xl text-amber-text leading-none mb-1.5">
+                    {result.metric}
+                  </div>
+                  <div className="font-mono text-[9px] tracking-wider uppercase text-navy/40 leading-relaxed">
+                    {result.label}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </section>
+
+          {/* Key Finding */}
+          <section>
+            <div className="flex items-center gap-3 mb-4">
+              <span className="font-mono text-[9px] tracking-[0.3em] uppercase text-teal-dim">Key Finding</span>
+              <span className="flex-1 h-px bg-navy/10" />
+            </div>
+            <div className="border border-amber-text/30 bg-paper-dim p-6 md:p-8">
+              <p className="font-sans text-base md:text-lg text-navy/70 leading-relaxed">
+                {exp.keyFinding}
+              </p>
+            </div>
+          </section>
         </div>
       </div>
 
@@ -167,7 +167,9 @@ export default function CaseStudy() {
             .map((e) => (
               <button
                 key={e.id}
-                onClick={() => navigate(`/experiment/${e.id}`)}
+                onClick={() => {
+                  navigate(`/experiment/${e.id}`);
+                }}
                 className="group text-left border border-navy/10 bg-paper-dim p-5 hover:border-amber-text/30 hover:bg-paper-dark transition-all duration-300 relative overflow-hidden"
               >
                 <div className="absolute top-0 left-0 right-0 h-px bg-amber-text scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left" />

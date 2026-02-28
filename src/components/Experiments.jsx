@@ -16,7 +16,7 @@ function ExperimentCard({ exp, index }) {
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: index * 0.08 }}
       onClick={() => navigate(`/experiment/${exp.id}`)}
-      className="group border border-navy/10 bg-paper-dim p-6 hover:border-amber-text/30 hover:bg-paper-dark transition-all duration-400 cursor-pointer relative overflow-hidden"
+      className="group border border-navy/10 bg-paper-dim p-6 hover:border-amber-text/30 hover:bg-paper-dark hover:-translate-y-1 hover:shadow-lg transition-all duration-400 cursor-pointer relative overflow-hidden"
     >
       {/* Hover accent line */}
       <div className="absolute top-0 left-0 right-0 h-px bg-amber-text scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left" />

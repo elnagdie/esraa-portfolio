@@ -1,145 +1,220 @@
 export const experiments = [
   {
-    id: 'exp-001',
+    id: '001',
     number: 'EXP-001',
     company: 'MasterClass',
     title: 'Can a consumer brand sell structured learning to enterprises?',
-    hypothesis: 'Enterprise buyers would adopt a new guided learning format if positioned around measurable career outcomes rather than celebrity brand appeal.',
-    keyMetric: '$900K',
-    keyMetricLabel: 'Revenue beat (+10% YoY)',
-    tags: ['PM', 'PMM', 'TPM', 'GTM', 'SALES ENABLEMENT'],
+    hypothesis: 'Enterprise buyers would adopt guided learning if positioned around career outcomes — not celebrity appeal.',
+    keyMetric: '47%',
+    keyMetricLabel: 'higher NPS than existing product',
+    tags: ['PM', 'GTM', 'CROSS-FUNCTIONAL', '0→1'],
     role: 'Product Manager',
-    timeline: '2023–2025',
+    timeline: '2023–2024',
+    problem:
+      'MasterClass at Work had a content library problem disguised as a retention crisis. L&D admins had access to celebrity-led video content but didn\'t know what to assign, to whom, or how to structure it into learning programs. CS was spending hours per client manually curating content — a model that didn\'t scale.',
     method: [
-      'Conducted customer research with enterprise L&D buyers to understand demand for structured learning',
-      'Developed positioning: "Career-focused, structured learning paths tailored to career levels" — segmented for early career professionals, first-time leaders, and experienced executives',
-      'Created complete sales enablement program: playbooks, objection handlers, demo scripts, competitive battlecards',
-      'Led cross-functional team of 10+ (engineering, design, data, marketing, CS)',
-      'Established metrics framework: NPS, completion rate, adoption targets',
-      'Partnered with Marketing on launch campaigns and website redesign',
-      'Ran 20+ growth experiments, iterated messaging based on performance data',
+      {
+        phase: 'Discovery',
+        content:
+          'Synthesized CS feedback, sales call recordings, and a UXR study with 10 L&D professionals. Found three root problems: admins didn\'t know what to assign, spent too long assembling content, and lacked awareness of existing tools.',
+      },
+      {
+        phase: 'Build approach',
+        content:
+          'Evaluated four options (2–26 weeks effort range), recommended a landing page approach that shipped in 8 weeks while preserving existing infrastructure. Principle: time-box investment until we have conviction of value.',
+      },
+      {
+        phase: 'Scoping',
+        content:
+          'Defined P0/P1/P2 priorities. Deliberately descoped features stakeholders wanted (drip emails, badging) because they\'d add 4+ weeks without validating the core concept.',
+      },
+      {
+        phase: 'Execution',
+        content:
+          'Led a 15-person cross-functional pod across Product, Engineering, Content, Creative, Marketing, Sales Enablement, and CS. Resolved a CS-vs-Content tension by reframing around the user need rather than picking sides. Managed coverage when two key team members went on leave mid-project. Zero escalations to leadership.',
+      },
+      {
+        phase: 'Phased GTM',
+        content:
+          'Pre-launched at an industry conference with a prototype demo before the product existed. Soft-launched over summer with staggered releases. Hard-launched in fall when buyers returned — with 6–8 weeks of live data already informing positioning.',
+      },
+      {
+        phase: 'Feedback engine',
+        content:
+          'Built four-layer post-launch measurement: product analytics, passive sales call tracking (auto-flagged mentions), structured qualitative feedback from CS/Sales, and module-level effectiveness surveys. Synthesized into 30-day and 90-day Product Reviews with clear invest/hold/pivot recommendations.',
+      },
     ],
     results: [
-      { metric: '+65', label: 'NPS — Programs launch' },
-      { metric: '>70%', label: 'Completion rate — demonstrating strong PMF' },
-      { metric: '38', label: 'Enterprise clients adopted Programs' },
-      { metric: '190+', label: 'Programs created' },
-      { metric: '$900K', label: 'Revenue beat (+10% YoY), exceeding Q4 OKR by 143%' },
-      { metric: '80%', label: 'Of 2024 partnership sales via Revolut, 2 months ahead of schedule' },
+      { metric: '47%', label: 'NPS — higher than existing product' },
+      { metric: '50–60%', label: 'Module completion (vs. ~14% for prior content)' },
+      { metric: '$M+', label: 'Multi-million dollar enterprise pipeline influenced' },
+      { metric: '~50%', label: 'Sales calls mentioning Programs' },
+      { metric: '+51%', label: 'Increase in weekly active admins' },
+      { metric: '60%', label: 'Engaged admins had been inactive in prior months' },
+      { metric: '143%', label: 'OKR exceeded — beat quarterly revenue target' },
     ],
-    keyFinding: 'Enterprise product launches succeed when you combine deep customer research with segmented positioning and tight cross-functional execution. The celebrity brand got us meetings — the outcome-focused positioning closed deals.',
+    keyFinding:
+      'The celebrity brand got meetings. Outcome-focused positioning closed deals. The biggest unlock wasn\'t the product — it was the systems around it: phased GTM, passive sales tracking, and multi-source feedback loops that built conviction before going broad.',
   },
   {
-    id: 'exp-002',
+    id: '002',
     number: 'EXP-002',
+    company: 'MasterClass',
+    title: 'Can you eliminate engineering dependency from a content workflow?',
+    hypothesis: 'A self-service tool would unlock CSM autonomy and drive higher engagement than manual processes.',
+    keyMetric: '98%',
+    keyMetricLabel: 'reduction in creation time',
+    tags: ['PM', 'TPM', 'INTERNAL TOOLING', 'OPS'],
+    role: 'Product Manager',
+    timeline: 'Q4 2023–Q2 2024',
+    problem:
+      'CSMs were curating custom learning playlists for enterprise clients. Each playlist took 4–5 hours — hunting through spreadsheets for video IDs across multiple systems, then submitting to Engineering to run a script. Every creation and edit required Eng support.\n\nCSMs were afraid of the existing admin tool — no guardrails, no validation, real risk of breaking things. A previous attempt to solve this with documentation failed: 1 out of 6 CSMs adopted it. The problem was the tool, not the training.',
+    method: [
+      {
+        phase: 'Options analysis',
+        content:
+          'Evaluated three approaches at a formal Product Review. Enhancing ingestion sheets still required Eng. Enhancing the admin tool was "an uphill fight" with worse UX. Building a dedicated creator in the admin platform was the clear winner — and architecturally close to eventually being customer-facing.',
+      },
+      {
+        phase: 'Fear-first design',
+        content:
+          'The core UX insight was that CSMs were afraid of breaking things. Every design decision addressed this: a two-phase publishing workflow (publish to internal demo account first, then to client), validation modals showing exactly what\'s missing, double-confirm on edits to published playlists, and a CSM-scoped role that hid dangerous permissions.',
+      },
+      {
+        phase: 'Delivery under constraints',
+        content:
+          'One of five concurrent initiatives. Shared FE resources with a partnership that had a non-negotiable deadline. Accepted the constraint, adjusted timeline, and overlapped UAT with test engineering when FE fell behind — rather than cutting scope.',
+      },
+      {
+        phase: 'Chaos testing',
+        content:
+          'Ran deliberate break-the-tool sessions before launch. Caught 14 bugs including critical ones (publishing with no lessons, instructors not updating on removal). All critical bugs resolved before launch.',
+      },
+      {
+        phase: 'Brand quality',
+        content:
+          'Authored a Creative Brief for 40 brand-approved assets across 10 skill categories — not in my job description, but without it CSMs would have shipped off-brand thumbnails.',
+      },
+      {
+        phase: 'Enablement',
+        content:
+          'Wrote a comprehensive guide with screen recordings, content rights restrictions, and the two-phase publishing workflow. Set up feedback channels, peer-review process, and ongoing CSM syncs.',
+      },
+    ],
+    results: [
+      { metric: '98%', label: 'Creation time reduction (4–5 hours → under 5 minutes)' },
+      { metric: '#1', label: 'Highest 30D/90D engagement of all enterprise content types' },
+      { metric: 'Top', label: 'NPS — higher than both existing playlists and Programs' },
+      { metric: '100%', label: 'CSM team self-sufficient from day one' },
+      { metric: '50%+', label: 'Consumers were admin-assigned (intentional learning)' },
+      { metric: '14', label: 'Pre-launch bugs caught, all critical issues resolved' },
+    ],
+    keyFinding:
+      'The best internal tools eliminate fear, not just friction. Two-phase publishing, validation modals, scoped permissions, and peer review all addressed one root issue: CSMs were afraid of breaking things. The failed documentation attempt proved the problem was never training — it was the tool. Once fear was removed, adoption was instant.',
+  },
+  {
+    id: '003',
+    number: 'EXP-003',
     company: 'Altus Group',
     title: 'Can segmented positioning unlock a fragmented market?',
-    hypothesis: 'A new commercial real estate data platform could win against entrenched competitors by speaking differently to each buyer segment rather than using one-size-fits-all messaging.',
+    hypothesis: 'Speaking differently to each buyer segment would drive adoption against entrenched competitors.',
     keyMetric: '750+',
-    keyMetricLabel: 'Companies on platform (from 0)',
-    tags: ['PMM', 'PM', 'GTM', 'POSITIONING', 'CONTENT'],
-    role: 'Senior Product Owner (de facto Product Marketing)',
+    keyMetricLabel: 'companies adopted',
+    tags: ['PMM', 'GTM', 'POSITIONING', 'SALES ENABLEMENT'],
+    role: 'Senior Product Owner (de facto PMM)',
     timeline: '2019–2022',
+    problem:
+      'Altus Group was building a unified CRE data platform to replace two aging, siloed legacy systems. The market was dominated by entrenched players. The platform needed to serve fundamentally different buyers — valuators, brokers, and developers — each with different workflows and definitions of "valuable."\n\nThere was no product marketing function. The gap between what we built and what the field could articulate grew with every release.',
     method: [
-      'Conducted 15+ customer interviews across three distinct buyer personas: valuators, CRE professionals, and developers/builders',
-      'Developed three distinct positioning strategies: Valuators, CRE Professionals, Developers/Builders — each with tailored messaging',
-      'Built full content engine: 30+ help articles, 10 tutorial videos, blog posts, case studies, webinars',
-      'Created competitive battlecards, objection handling guides, and persona-specific sales playbooks',
-      'Trained Sales team on segment-specific selling approaches',
-      'Partnered with Marketing on website redesign with persona-specific landing pages',
+      {
+        phase: 'Customer research',
+        content:
+          'Conducted 15 interviews across four personas using an unbiased framework I designed. One session uncovered seven distinct pain points — including that users relied on search 90% of the time and the map only 10%, directly reshaping engineering priorities.',
+      },
+      {
+        phase: 'Usage analysis',
+        content:
+          'Analyzed 12 months of legacy platform data (17,000+ page views) to build a prioritization map grounded in actual behavior, not stakeholder opinions.',
+      },
+      {
+        phase: 'Three positioning strategies',
+        content:
+          'Developed distinct value propositions for valuators (historical data depth), CRE professionals (market intelligence), and developers (economic forecasting). Refined based on Sales feedback — they flagged that "comprehensive" mattered less to builders than "forecasting."',
+      },
+      {
+        phase: 'GTM engine',
+        content:
+          'Operated as de facto PMM, building three systems. First, a product marketing brief template for every release — Marketing could draft communications without deep product knowledge. Second, one-page competitive battlecards in "If they say / You say" format, objection handlers, and persona-specific demo scripts. Third, 30+ help articles and 10 tutorial videos reducing support burden and improving time-to-value.',
+      },
+      {
+        phase: 'Release sequencing',
+        content:
+          'Organized releases around use-case completion, not feature shipping. Each release fully served a user segment so Sales could migrate clients with confidence. Built company-level adoption dashboards and flagged at-risk accounts to CS with specific context.',
+      },
+      {
+        phase: 'Quality',
+        content:
+          'Personally QA\'d 15+ calculated metrics (vacancy rates, rental rates) against legacy definitions. One miscalculated number would have destroyed trust with professional users.',
+      },
     ],
     results: [
-      { metric: '0→750+', label: 'Companies on the platform in 3 years' },
-      { metric: '8,000+', label: 'Active users on the platform' },
-      { metric: '+5%', label: 'ARR contribution' },
-      { metric: '+15%', label: 'Feature adoption through content & education' },
-      { metric: '+40%', label: 'Higher confidence reported by Sales in competitive deals' },
+      { metric: '750+', label: 'Companies on platform (0 → 750+ in 3 years)' },
+      { metric: '8,000+', label: 'Active users' },
+      { metric: '+ARR', label: 'Meaningful increase in annual recurring revenue' },
+      { metric: '+15%', label: 'Feature adoption through education and enablement' },
+      { metric: '+40%', label: 'Sales confidence in competitive deals' },
+      { metric: '100%', label: 'Battlecard usage by reps (vs. <10% for prior materials)' },
+      { metric: '-20%', label: 'Fewer repetitive support inquiries' },
     ],
-    keyFinding: 'Segmented positioning — speaking differently to different buyers about the same product — is what unlocks growth in fragmented markets. One message for all buyers means no message resonates deeply with anyone.',
+    keyFinding:
+      'One message for all buyers means no message resonates deeply with anyone. Segmented positioning worked because it was paired with practical enablement — one-page battlecards Sales actually used, objection handlers grounded in real conversations, and content that helped customers get to value faster. Operating as the bridge between Product, Sales, Marketing, and CS created compounding growth.',
   },
   {
-    id: 'exp-003',
-    number: 'EXP-003',
+    id: '004',
+    number: 'EXP-004',
     company: 'Yelp',
     title: 'What actually drives long-term business owner engagement?',
-    hypothesis: 'Business owner engagement on Yelp is driven by specific early behaviors that can be predicted and encouraged — not by how complete their profile setup is.',
+    hypothesis: 'Engagement behaviors — not profile completion — predict business owner success.',
     keyMetric: '19%',
-    keyMetricLabel: 'Homepage engagement lift',
+    keyMetricLabel: 'engagement lift',
     tags: ['PM', 'GROWTH', 'EXPERIMENTATION', 'DATA SCIENCE'],
     role: 'Product Manager',
     timeline: '2022–2023',
+    problem:
+      'Yelp for Business had flat WAU growth. The team assumed onboarding was the bottleneck — get business owners to complete setup, and engagement follows. Meanwhile, a recently launched recommendations feature was underperforming despite working well technically.',
     method: [
-      'Partnered with Data Science to build predictive models identifying key success factors for business owners',
-      'Discovered responding to reviews = 2.76x pageview multiplier; responding to messages = 2.28x',
-      'Ran multiple A/B experiments testing three messaging approaches: functional, value-focused, and ROI-focused',
-      'Launched action-based recommendations feature on homepage',
-      'Redesigned onboarding with "Getting Started" section targeting newly claimed businesses',
-      'Built Mixpanel dashboards for self-service analysis',
-      'Developed 1-year roadmap targeting 10% WAU growth',
+      {
+        phase: 'Predictive modeling',
+        content:
+          'Partnered with Data Science to build models identifying success predictors for business owners. Used Poisson regression with confounding variable controls. The result contradicted the team\'s core assumption: responding to reviews created a 2.76x pageview multiplier and responding to messages created 2.28x — but setup completion was NOT a significant predictor of long-term engagement.',
+      },
+      {
+        phase: 'Onboarding A/B testing',
+        content:
+          'Despite setup not being the primary driver, the flow still had 40% drop-off. Tested three variants across 5,000 users each. The winner: reordering steps so users saw value before being asked to pay. Combined best elements from multiple variants and iterated across all platforms to achieve +10% setup rate improvement.',
+      },
+      {
+        phase: 'Messaging experimentation',
+        content:
+          'The recommendations feature was underperforming due to positioning, not product quality. Tested three messaging approaches with 10,000 users each. Functional messaging ("You have 3 actions"): low engagement. Value messaging ("Respond faster to attract customers"): moderate. ROI messaging ("Businesses that do this get 20% more messages"): 4x the action rate of functional. Repositioned the entire feature around data-driven business improvement.',
+      },
+      {
+        phase: 'Opportunity sizing',
+        content:
+          'Identified a large pool of dormant business owners visiting the consumer site but not engaging with their business profiles. Launched a feature targeting them, generating statistically significant increases in engagement. Built self-service dashboards and a 1-year roadmap targeting 10% WAU growth.',
+      },
     ],
     results: [
-      { metric: '19%', label: 'Homepage engagement increase from recommendations feature' },
-      { metric: '10%', label: 'Onboarding completion improvement' },
-      { metric: '+15%', label: 'Overall homepage engagement across combined initiatives' },
-      { metric: '11,500', label: 'Connections/week opportunity identified from dormant users' },
-      { metric: '2.76x', label: 'Pageview multiplier for review responders — shifted team strategy' },
+      { metric: '+19%', label: 'Recommendations engagement (exceeded target)' },
+      { metric: '+10%', label: 'Onboarding completion across all platforms' },
+      { metric: '+10%', label: 'WAU growth (met annual target)' },
+      { metric: '+15%', label: 'Homepage engagement across combined initiatives' },
+      { metric: '+49–51%', label: 'Relative CTR improvement on mobile' },
+      { metric: '4x', label: 'Action rate — ROI messaging vs. functional' },
+      { metric: '2.76x', label: 'Pageview multiplier for review responders' },
     ],
-    keyFinding: 'The best product decisions come from combining qualitative insight with rigorous experimentation. The data told us a completely different story than our assumptions — setup completion didn\'t predict success, but engagement behaviors did.',
-  },
-  {
-    id: 'exp-004',
-    number: 'EXP-004',
-    company: 'Propel Holdings',
-    title: 'Can a call centre agent become a product leader?',
-    hypothesis: 'Deep customer understanding (from frontline experience) combined with systems knowledge creates better product requirements than traditional top-down approaches.',
-    keyMetric: '+15%',
-    keyMetricLabel: 'Increase in application submissions',
-    tags: ['TPM', 'PM', 'AGILE', 'PROCESS'],
-    role: 'Business Analyst → Scrum Master → Product Strategy',
-    timeline: '2016–2019',
-    method: [
-      'Started in call centre, talking to customers daily — learning their frustrations, confusion points, and unmet needs firsthand',
-      'Self-taught the loan management system architecture (JAGLMS) across 11 domains',
-      'Earned promotion to Business Analyst, then Scrum Master leading 8 engineers',
-      'Introduced rigorous requirements process: detailed acceptance criteria, pre-sprint grooming, and estimation sessions',
-      'Redesigned customer-facing loan application flows based on direct customer insight',
-      'Built self-service dashboard with in-app messaging to reduce support burden',
-      'Managed product launches across 14+ US states with regulatory compliance',
-    ],
-    results: [
-      { metric: '+15%', label: 'Increase in application submissions through UX redesign' },
-      { metric: '+10%', label: 'Increase in login rate through dashboard features' },
-      { metric: '-5%', label: 'Reduction in customer service calls through self-service' },
-    ],
-    keyFinding: 'The best product people aren\'t the ones with the fanciest frameworks — they\'re the ones who\'ve sat with customers long enough to feel their pain, and who understand the system well enough to know what\'s actually possible.',
-  },
-  {
-    id: 'exp-005',
-    number: 'EXP-005',
-    company: 'MISHKA',
-    title: 'Can you build a physical product brand from a niche insight?',
-    hypothesis: 'Busy Muslim women need a practical, dignified prayer solution for on-the-go use, and no mainstream product adequately serves this need.',
-    keyMetric: '0→1',
-    keyMetricLabel: 'End-to-end brand launch',
-    tags: ['FOUNDER', 'PMM', '0→1', 'E-COMMERCE'],
-    role: 'Founder',
-    timeline: '2024–Present',
-    externalLink: 'https://shopmishka.com',
-    externalLinkLabel: 'shopmishka.com',
-    method: [
-      'Identified the pain point from personal experience and conversations within the community',
-      'Researched the market — existing solutions were either low-quality, not portable, or not designed for real on-the-go use',
-      'Designed a product line: Travel Abaya Set ($64), Complete Prayer Set ($64), Essentials Set ($44)',
-      'Built the Shopify e-commerce store with persona-specific messaging',
-      'Created brand identity, product photography, and marketing content',
-      'Launched and iterated based on customer feedback',
-    ],
-    results: [
-      { metric: 'Live', label: 'E-commerce brand with multiple product SKUs' },
-      { metric: '5', label: 'Distinct customer personas served' },
-      { metric: '100%', label: 'End-to-end execution: research → design → brand → e-commerce → marketing' },
-    ],
-    keyFinding: 'Product management at its core — identify a real pain point, build a solution, take it to market. The same skills that drive enterprise product launches apply to building a brand from scratch. The best products come from lived experience with the problem.',
+    keyFinding:
+      'The predictive model told a completely different story than our assumptions. Setup didn\'t predict success — engagement behaviors did. That single insight shifted the entire team\'s strategy. And the messaging test proved positioning matters as much as product: same feature, better framing, 4x the results.',
   },
 ];
 

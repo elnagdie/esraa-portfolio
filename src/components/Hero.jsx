@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 const metrics = [
   { value: '8+', unit: 'yrs', label: 'in product & GTM' },
   { value: '750+', unit: '', label: 'companies on platforms I\'ve launched' },
-  { value: '38', unit: '', label: 'enterprise clients adopted my last launch' },
+  { value: '98%', unit: '', label: 'reduction in creation time' },
   { value: '19%', unit: '', label: 'engagement lift from my last experiment' },
 ];
 
