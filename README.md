@@ -1,17 +1,24 @@
 # Esraa Elnagdi — Portfolio
 
-A personal portfolio site built around the idea that great product work follows the scientific method: hypothesize, test, ship, measure.
+Biochemist turned product builder. 10 years translating the gap between what teams build and why customers care.
 
 **Live site:** [esraa-elnagdi-portfolio.netlify.app](https://esraa-elnagdi-portfolio.netlify.app)
 
 ## What's inside
 
-Four case studies presented as experiments, each with a hypothesis, method, results, and key finding:
+**Experiments** — Four case studies, each with a hypothesis, method, results, and key finding:
 
-- **EXP-001** — MasterClass Programs: Selling structured learning to enterprises
-- **EXP-002** — MasterClass Custom Playlists: Eliminating engineering dependency from a content workflow
-- **EXP-003** — Altus Data Studio: Segmented positioning for a fragmented market
-- **EXP-004** — Yelp Experimentation: Finding what actually drives business owner engagement
+- **EXP-001** — Can a consumer brand sell structured learning to enterprises? (MasterClass)
+- **EXP-002** — Can you eliminate engineering dependency from a content workflow? (MasterClass)
+- **EXP-003** — Can segmented positioning unlock a fragmented market? (Altus Group)
+- **EXP-004** — What actually drives long-term business owner engagement? (Yelp)
+
+**Side Lab** — Building in public:
+
+- Competitive Analysis Skill — Automates end-to-end competitive analysis across 13 dimensions
+- YouTube Transcriber — Paste a URL, get the transcript
+- Trivia Engine — Reusable trivia game engine with themed editions
+- Duck Hunt — Browser game, first AI-assisted build with Claude Code
 
 ## Built with
 
