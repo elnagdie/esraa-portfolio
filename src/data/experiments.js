@@ -10,7 +10,6 @@ export const experiments = [
     keyMetricLabel: 'NPS improvement over existing formats',
     tags: ['PM', 'GTM', 'CROSS-FUNCTIONAL', '0→1'],
     role: 'Product Manager',
-    timeline: '2023–2024',
     problem:
       'MasterClass at Work had a rich content library — celebrity instructors, beautifully produced videos — but enterprise L&D admins were overwhelmed. They didn\'t know what content to assign, to whom, or how to structure it into a learning program. The CS team was spending hours per client manually curating content and mapping it to customer goals, and that model didn\'t scale. The result: deals stalled, customers churned, and the number-one reason cited by Sales was that admins didn\'t know how to use the platform.',
     method: [
@@ -71,7 +70,6 @@ export const experiments = [
     keyMetricLabel: 'reduction in creation time',
     tags: ['PM', 'TPM', 'INTERNAL TOOLING', 'OPS'],
     role: 'Product Manager',
-    timeline: 'Q4 2023–Q2 2024',
     problem:
       'CSMs were curating custom learning playlists for enterprise clients. Each playlist took 4–5 hours — hunting through spreadsheets for video IDs across multiple systems, then submitting to Engineering to run a script. Every creation and edit required Eng support.\n\nCSMs were afraid of the existing admin tool — no guardrails, no validation, real risk of breaking things. A previous attempt to solve this with documentation failed: 1 out of 6 CSMs adopted it. The problem was the tool, not the training.',
     method: [
@@ -127,14 +125,13 @@ export const experiments = [
     keyMetricLabel: 'companies adopted',
     tags: ['PMM', 'GTM', 'POSITIONING', 'SALES ENABLEMENT'],
     role: 'Senior Product Owner (de facto PMM)',
-    timeline: '2019–2022',
     problem:
-      'Altus Group was building a unified CRE data platform to replace two aging, siloed legacy systems. The market was dominated by entrenched players. The platform needed to serve fundamentally different buyers — valuators, brokers, and developers — each with different workflows and definitions of "valuable."\n\nThere was no product marketing function. The gap between what we built and what the field could articulate grew with every release.',
+      'Altus Group was building a unified CRE data platform to replace two aging, siloed legacy systems. The market was dominated by entrenched players. The platform needed to serve fundamentally different buyers \u2014 valuators, brokers, developers, and home builders \u2014 each with different workflows and definitions of \u201cvaluable.\u201d\n\nThere was no product marketing function. The gap between what we built and what the field could articulate grew with every release.',
     method: [
       {
         phase: 'Customer research',
         content:
-          'Conducted 15 interviews across four personas using an unbiased framework I designed. One session uncovered seven distinct pain points — including that users relied on search 90% of the time and the map only 10%, directly reshaping engineering priorities.',
+          'Conducted 15 interviews across four buyer personas using an unbiased framework I designed. One session uncovered seven distinct pain points \u2014 including that users relied on search 90% of the time and the map only 10%, directly reshaping engineering priorities.',
       },
       {
         phase: 'Usage analysis',
@@ -142,14 +139,14 @@ export const experiments = [
           'Analyzed 12 months of legacy platform data (17,000+ page views) to build a prioritization map grounded in actual behavior, not stakeholder opinions.',
       },
       {
-        phase: 'Three positioning strategies',
+        phase: 'Four positioning strategies',
         content:
-          'Developed distinct value propositions for valuators (historical data depth), CRE professionals (market intelligence), and developers (economic forecasting). Refined based on Sales feedback — they flagged that "comprehensive" mattered less to builders than "forecasting."',
+          'Developed distinct value propositions for valuators (historical data depth), CRE professionals (market intelligence), developers (economic forecasting), and home builders (market trends). Refined based on Sales feedback \u2014 they flagged that \u201ccomprehensive\u201d mattered less to builders than \u201cforecasting.\u201d',
       },
       {
         phase: 'GTM engine',
         content:
-          'Operated as de facto PMM, building three systems. First, a product marketing brief template for every release — Marketing could draft communications without deep product knowledge. Second, one-page competitive battlecards in "If they say / You say" format, objection handlers, and persona-specific demo scripts. Third, 30+ help articles and 10 tutorial videos reducing support burden and improving time-to-value.',
+          'Operated as de facto PMM, building three systems. First, a product marketing brief template for every release \u2014 Marketing could draft communications without deep product knowledge. Second, one-page competitive battlecards in \u201cIf they say / You say\u201d format, objection handlers, and persona-specific demo scripts. Third, 30+ help articles and 10 tutorial videos reducing support burden and improving time-to-value.',
       },
       {
         phase: 'Release sequencing',
@@ -159,17 +156,14 @@ export const experiments = [
       {
         phase: 'Quality',
         content:
-          'Personally QA\'d 15+ calculated metrics (vacancy rates, rental rates) against legacy definitions. One miscalculated number would have destroyed trust with professional users.',
+          'Personally QA\u2019d calculated metrics (vacancy rates, rental rates, occupancy costs) against legacy definitions. One miscalculated number would have destroyed trust with professional users.',
       },
     ],
     results: [
-      { metric: '750+', label: 'Companies on platform (0 → 750+ in 3 years)' },
+      { metric: '750+', label: 'Companies on platform (0 \u2192 750+ in 3 years)' },
       { metric: '8,000+', label: 'Active users' },
-      { metric: '+ARR', label: 'Meaningful increase in annual recurring revenue' },
+      { metric: '+5%', label: 'ARR contribution' },
       { metric: '+15%', label: 'Feature adoption through education and enablement' },
-      { metric: '+40%', label: 'Sales confidence in competitive deals' },
-      { metric: '100%', label: 'Battlecard usage by reps (vs. <10% for prior materials)' },
-      { metric: '-20%', label: 'Fewer repetitive support inquiries' },
     ],
     keyFinding:
       'One message for all buyers means no message resonates deeply with anyone. Segmented positioning worked because it was paired with practical enablement — one-page battlecards Sales actually used, objection handlers grounded in real conversations, and content that helped customers get to value faster. Operating as the bridge between Product, Sales, Marketing, and CS created compounding growth.',
@@ -184,7 +178,6 @@ export const experiments = [
     keyMetricLabel: 'engagement lift',
     tags: ['PM', 'GROWTH', 'EXPERIMENTATION', 'DATA SCIENCE'],
     role: 'Product Manager',
-    timeline: '2022–2023',
     problem:
       'Yelp for Business had flat WAU growth. The team assumed onboarding was the bottleneck — get business owners to complete setup, and engagement follows. Meanwhile, a recently launched recommendations feature was underperforming despite working well technically.',
     method: [

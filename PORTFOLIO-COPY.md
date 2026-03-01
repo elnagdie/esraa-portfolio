@@ -87,7 +87,7 @@ MasterClass, Yelp, Altus Group, Propel Holdings
 ### EXP-001 | MasterClass
 **Can a consumer brand sell structured learning to enterprises?**
 
-Product Manager | 2023–2024
+Product Manager
 Tags: PM, GTM, CROSS-FUNCTIONAL, 0→1
 
 **Hero Metrics:**
@@ -133,7 +133,7 @@ The celebrity brand got meetings. Outcome-focused positioning closed deals. Admi
 ### EXP-002 | MasterClass
 **Can you eliminate engineering dependency from a content workflow?**
 
-Product Manager | Q4 2023–Q2 2024
+Product Manager
 Tags: PM, TPM, INTERNAL TOOLING, OPS
 
 **Hero Metric:** 98% reduction in creation time
@@ -176,7 +176,7 @@ The best internal tools eliminate fear, not just friction. Two-phase publishing,
 ### EXP-003 | Altus Group
 **Can segmented positioning unlock a fragmented market?**
 
-Senior Product Owner (de facto PMM) | 2019–2022
+Senior Product Owner (de facto PMM)
 Tags: PMM, GTM, POSITIONING, SALES ENABLEMENT
 
 **Hero Metric:** 750+ companies adopted
@@ -184,32 +184,30 @@ Tags: PMM, GTM, POSITIONING, SALES ENABLEMENT
 **Hypothesis:** Speaking differently to each buyer segment would drive adoption against entrenched competitors.
 
 **The Problem:**
-Altus Group was building a unified CRE data platform to replace two aging, siloed legacy systems. The market was dominated by entrenched players. The platform needed to serve fundamentally different buyers — valuators, brokers, and developers — each with different workflows and definitions of "valuable."
+Altus Group was building a unified CRE data platform to replace two aging, siloed legacy systems. The market was dominated by entrenched players. The platform needed to serve fundamentally different buyers — valuators, brokers, developers, and home builders — each with different workflows and definitions of "valuable."
 
 There was no product marketing function. The gap between what we built and what the field could articulate grew with every release.
 
 **Method:**
 
-**Customer research:** Conducted 15 interviews across four personas using an unbiased framework I designed. One session uncovered seven distinct pain points — including that users relied on search 90% of the time and the map only 10%, directly reshaping engineering priorities.
+**Customer research:** Conducted 15 interviews across four buyer personas using an unbiased framework I designed. One session uncovered seven distinct pain points — including that users relied on search 90% of the time and the map only 10%, directly reshaping engineering priorities.
 
 **Usage analysis:** Analyzed 12 months of legacy platform data (17,000+ page views) to build a prioritization map grounded in actual behavior, not stakeholder opinions.
 
-**Three positioning strategies:** Developed distinct value propositions for valuators (historical data depth), CRE professionals (market intelligence), and developers (economic forecasting). Refined based on Sales feedback — they flagged that "comprehensive" mattered less to builders than "forecasting."
+**Four positioning strategies:** Developed distinct value propositions for valuators (historical data depth), CRE professionals (market intelligence), developers (economic forecasting), and home builders (market trends). Refined based on Sales feedback — they flagged that "comprehensive" mattered less to builders than "forecasting."
 
 **GTM engine:** Operated as de facto PMM, building three systems. First, a product marketing brief template for every release — Marketing could draft communications without deep product knowledge. Second, one-page competitive battlecards in "If they say / You say" format, objection handlers, and persona-specific demo scripts. Third, 30+ help articles and 10 tutorial videos reducing support burden and improving time-to-value.
 
 **Release sequencing:** Organized releases around use-case completion, not feature shipping. Each release fully served a user segment so Sales could migrate clients with confidence. Built company-level adoption dashboards and flagged at-risk accounts to CS with specific context.
 
-**Quality:** Personally QA'd 15+ calculated metrics (vacancy rates, rental rates) against legacy definitions. One miscalculated number would have destroyed trust with professional users.
+**Quality:** Personally QA'd calculated metrics (vacancy rates, rental rates, occupancy costs) against legacy definitions. One miscalculated number would have destroyed trust with professional users.
 
 **Results:**
 - 750+ — Companies on platform (0 → 750+ in 3 years)
 - 8,000+ — Active users
-- +ARR — Meaningful increase in annual recurring revenue
+- +5% — ARR contribution
 - +15% — Feature adoption through education and enablement
-- +40% — Sales confidence in competitive deals
-- 100% — Battlecard usage by reps (vs. <10% for prior materials)
-- -20% — Fewer repetitive support inquiries
+- Battlecard usage went from near-zero to standard practice across the Sales team — the "If they say / You say" format matched how reps actually sold
 
 **Key Finding:**
 One message for all buyers means no message resonates deeply with anyone. Segmented positioning worked because it was paired with practical enablement — one-page battlecards Sales actually used, objection handlers grounded in real conversations, and content that helped customers get to value faster. Operating as the bridge between Product, Sales, Marketing, and CS created compounding growth.
@@ -219,7 +217,7 @@ One message for all buyers means no message resonates deeply with anyone. Segmen
 ### EXP-004 | Yelp
 **What actually drives long-term business owner engagement?**
 
-Product Manager | 2022–2023
+Product Manager
 Tags: PM, GROWTH, EXPERIMENTATION, DATA SCIENCE
 
 **Hero Metric:** 19% engagement lift
