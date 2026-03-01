@@ -218,37 +218,36 @@ export const experiments = [
   },
 ];
 
+export const sideSkills = [
+  {
+    id: 'competitive-analysis',
+    name: 'Competitive Analysis Skill',
+    description:
+      'Automates end-to-end competitive analysis for 2\u20135 companies across 13 dimensions. Researches positioning, pricing, features, and customer proof, then generates a 16-slide deck. One command replaces hours of manual research.',
+    link: 'https://github.com/elnagdie/competitive-analysis',
+  },
+];
+
 export const sideProjects = [
   {
-    id: 'duck-hunt',
-    name: 'Duck Hunt Game',
-    emoji: '🎯',
-    description: 'A browser-based duck hunt game. Built with Claude Code for fun.',
-    link: 'https://github.com',
-    status: 'live',
-  },
-  {
-    id: 'toronto-tech-map',
-    name: 'Toronto Tech Map',
-    emoji: '🗺️',
-    description: 'Interactive data visualization of Toronto\'s startup ecosystem.',
-    link: null,
-    status: 'coming-soon',
+    id: 'youtube-transcriber',
+    name: 'YouTube Transcriber',
+    description:
+      'Paste a URL, get the transcript. Supports videos, playlists, and channels.',
+    link: 'https://github.com/elnagdie/youtube-transcriber',
   },
   {
     id: 'trivia-engine',
     name: 'Trivia Engine',
-    emoji: '🧠',
-    description: 'A reusable trivia game engine. First editions: Stranger Things & Harry Potter.',
-    link: null,
-    status: 'coming-soon',
+    description:
+      'Reusable trivia game engine with themed editions.',
+    link: 'https://github.com/elnagdie/trivia-engine',
   },
   {
-    id: 'ai-search',
-    name: 'AI Search Tool',
-    emoji: '🔍',
-    description: 'Natural language search across 116 product leader interviews from Behind the Craft.',
-    link: null,
-    status: 'coming-soon',
+    id: 'duck-hunt',
+    name: 'Duck Hunt',
+    description:
+      'Browser game. My first AI-assisted build with Claude Code.',
+    link: 'https://github.com/elnagdie/duck-hunt',
   },
 ];

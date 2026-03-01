@@ -253,23 +253,15 @@ The predictive model told a completely different story than our assumptions. Set
 
 ---
 
-## SIDE EXPERIMENTS — After-Hours Lab Work
+## SIDE LAB — Building in Public
 
-Not every experiment happens in the office. I also code with AI, create content, and build things for fun.
+**AI Skills:**
+- Competitive Analysis Skill — Automates end-to-end competitive analysis for 2–5 companies across 13 dimensions. Researches positioning, pricing, features, and customer proof, then generates a 16-slide deck. One command replaces hours of manual research. (github.com/elnagdie/competitive-analysis)
 
-- Duck Hunt Game [Live] — A browser-based duck hunt game. Built with Claude Code for fun.
-- Toronto Tech Map [In Progress] — Interactive data visualization of Toronto's startup ecosystem.
-- Trivia Engine [In Progress] — A reusable trivia game engine. First editions: Stranger Things & Harry Potter.
-- AI Search Tool [In Progress] — Natural language search across 116 product leader interviews from Behind the Craft.
-
----
-
-## FIELD DISPATCHES — Building in Public
-
-I create content about AI, the future of work, and career growth — because I learn best by building and sharing. Follow along:
-
-- TikTok — @esraacreates — AI tutorials, career advice, vlogs
-- MISHKA — shopmishka.com — My physical product brand for Muslim women on the go
+**Projects:**
+- YouTube Transcriber — Paste a URL, get the transcript. Supports videos, playlists, and channels. (github.com/elnagdie/youtube-transcriber)
+- Trivia Engine — Reusable trivia game engine with themed editions. (github.com/elnagdie/trivia-engine)
+- Duck Hunt — Browser game. My first AI-assisted build with Claude Code. (github.com/elnagdie/duck-hunt)
 
 ---
 

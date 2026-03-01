@@ -1,54 +1,49 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
-import { sideProjects } from '../data/experiments';
+import { sideSkills, sideProjects } from '../data/experiments';
 
-function ProjectCard({ project, index }) {
+function Card({ item, index }) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: '-40px' });
 
-  const isComingSoon = project.status === 'coming-soon';
-
   return (
-    <motion.div
+    <motion.a
       ref={ref}
+      href={item.link}
+      target="_blank"
+      rel="noopener noreferrer"
       initial={{ opacity: 0, y: 20 }}
       animate={isInView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.6, delay: index * 0.08 }}
-      className={`group border border-navy/10 bg-paper-dim p-6 relative overflow-hidden transition-all duration-300 ${
-        isComingSoon
-          ? 'opacity-50'
-          : 'hover:border-teal-dim/30 hover:bg-paper-dark cursor-pointer'
-      }`}
+      className="group border border-navy/10 bg-paper-dim p-6 relative overflow-hidden transition-all duration-300 hover:border-teal-dim/30 hover:bg-paper-dark block"
     >
       <div className="absolute top-0 left-0 right-0 h-px bg-teal-dim scale-x-0 group-hover:scale-x-100 transition-transform duration-400 origin-left" />
 
-      <div className="flex items-start justify-between mb-4">
-        <span className="text-2xl">{project.emoji}</span>
-        {isComingSoon ? (
-          <span className="font-mono text-[9px] tracking-[0.2em] uppercase text-navy/30 border border-navy/12 px-2 py-0.5 rounded-sm">
-            In Progress
-          </span>
-        ) : (
-          <span className="font-mono text-[9px] tracking-[0.2em] uppercase text-teal-dim border border-teal-dim/30 px-2 py-0.5 rounded-sm">
-            Live
-          </span>
-        )}
-      </div>
+      <h3 className="font-serif text-lg text-navy mb-2 leading-snug">
+        {item.name}
+      </h3>
+      <p className="font-sans text-sm text-navy/50 leading-relaxed mb-4">
+        {item.description}
+      </p>
 
-      <h3 className="font-serif text-lg text-navy mb-2 leading-snug">{project.name}</h3>
-      <p className="font-sans text-sm text-navy/50 leading-relaxed mb-4">{project.description}</p>
+      <span className="font-mono text-[10px] tracking-wider uppercase text-teal-dim group-hover:text-teal-lab transition-colors">
+        GitHub →
+      </span>
+    </motion.a>
+  );
+}
 
-      {project.link && !isComingSoon && (
-        <a
-          href={project.link}
-          target="_blank"
-          rel="noopener noreferrer"
-          onClick={(e) => e.stopPropagation()}
-          className="font-mono text-[10px] tracking-wider uppercase text-teal-dim hover:text-teal-lab transition-colors"
-        >
-          View →
-        </a>
-      )}
+function GroupLabel({ children, delay = 0, isInView }) {
+  return (
+    <motion.div
+      initial={{ opacity: 0, y: 12 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.5, delay }}
+      className="mb-4"
+    >
+      <span className="font-mono text-[10px] tracking-[0.2em] uppercase text-teal-dim">
+        {children}
+      </span>
     </motion.div>
   );
 }
@@ -58,7 +53,10 @@ export default function SideExperiments() {
   const isInView = useInView(ref, { once: true, margin: '-80px' });
 
   return (
-    <section id="side-experiments" className="py-24 md:py-32 px-6 md:px-12 lg:px-20 max-w-7xl mx-auto">
+    <section
+      id="side-experiments"
+      className="py-24 md:py-32 px-6 md:px-12 lg:px-20 max-w-7xl mx-auto"
+    >
       <motion.div
         ref={ref}
         initial={{ opacity: 0, y: 20 }}
@@ -68,18 +66,31 @@ export default function SideExperiments() {
       >
         <div className="flex items-center gap-3 mb-4">
           <span className="w-8 h-px bg-amber-text/40" />
-          <span className="section-label">Side Experiments</span>
+          <span className="section-label">Side Lab</span>
         </div>
-        <h2 className="section-headline mb-3">After-Hours Lab Work</h2>
-        <p className="font-sans text-base text-navy/50 max-w-xl">
-          Not every experiment happens in the office. I also code with AI, create content, and build things for fun.
-        </p>
+        <h2 className="section-headline mb-3">Building in Public</h2>
       </motion.div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-        {sideProjects.map((project, i) => (
-          <ProjectCard key={project.id} project={project} index={i} />
-        ))}
+      {/* AI Skills */}
+      <div className="mb-12">
+        <GroupLabel isInView={isInView}>AI Skills</GroupLabel>
+        <div className="grid grid-cols-1 gap-4">
+          {sideSkills.map((item, i) => (
+            <Card key={item.id} item={item} index={i} />
+          ))}
+        </div>
+      </div>
+
+      {/* Projects */}
+      <div>
+        <GroupLabel isInView={isInView} delay={0.15}>
+          Projects
+        </GroupLabel>
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+          {sideProjects.map((item, i) => (
+            <Card key={item.id} item={item} index={i} />
+          ))}
+        </div>
       </div>
     </section>
   );

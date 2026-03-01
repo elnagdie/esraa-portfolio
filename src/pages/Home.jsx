@@ -2,7 +2,6 @@ import Hero from '../components/Hero';
 import About from '../components/About';
 import Experiments from '../components/Experiments';
 import SideExperiments from '../components/SideExperiments';
-import Creating from '../components/Creating';
 import Contact from '../components/Contact';
 import SectionDivider from '../components/SectionDivider';
 
@@ -16,8 +15,6 @@ export default function Home() {
       <Experiments />
       <SectionDivider />
       <SideExperiments />
-      <SectionDivider />
-      <Creating />
       <SectionDivider />
       <Contact />
     </main>
