@@ -3,58 +3,63 @@ export const experiments = [
     id: '001',
     number: 'EXP-001',
     company: 'MasterClass',
-    title: 'Can a consumer brand sell structured learning to enterprises?',
-    hypothesis: 'Enterprise buyers would adopt guided learning if positioned around career outcomes — not celebrity appeal.',
+    title: 'MasterClass Programs: Building a New Product Category from Zero',
+    hypothesis:
+      'Enterprise buyers would adopt guided learning if positioned around career outcomes — not celebrity appeal.',
     keyMetric: '47%',
-    keyMetricLabel: 'higher NPS than existing product',
+    keyMetricLabel: 'NPS improvement over existing formats',
     tags: ['PM', 'GTM', 'CROSS-FUNCTIONAL', '0→1'],
     role: 'Product Manager',
     timeline: '2023–2024',
     problem:
-      'MasterClass at Work had a content library problem disguised as a retention crisis. L&D admins had access to celebrity-led video content but didn\'t know what to assign, to whom, or how to structure it into learning programs. CS was spending hours per client manually curating content — a model that didn\'t scale.',
+      'MasterClass at Work had a rich content library — celebrity instructors, beautifully produced videos — but enterprise L&D admins were overwhelmed. They didn\'t know what content to assign, to whom, or how to structure it into a learning program. The CS team was spending hours per client manually curating content and mapping it to customer goals, and that model didn\'t scale. The result: deals stalled, customers churned, and the number-one reason cited by Sales was that admins didn\'t know how to use the platform.',
     method: [
       {
         phase: 'Discovery',
         content:
-          'Synthesized CS feedback, sales call recordings, and a UXR study with 10 L&D professionals. Found three root problems: admins didn\'t know what to assign, spent too long assembling content, and lacked awareness of existing tools.',
+          'I synthesized feedback from CS, sales call recordings, admin survey data, and a UXR study I designed with 10 L&D professionals. The research revealed three core sub-problems: admins didn\'t know what content to assign, they spent too much time piecing together resources, and they lacked awareness of existing admin tools.',
       },
       {
         phase: 'Build approach',
         content:
-          'Evaluated four options (2–26 weeks effort range), recommended a landing page approach that shipped in 8 weeks while preserving existing infrastructure. Principle: time-box investment until we have conviction of value.',
+          'I evaluated four technical approaches in a Product Review with engineering leadership. We could build Programs as (a) an enhanced viewing experience, (b) a landing page with curated content collections, (c) an entirely new content type, or (d) leverage existing infrastructure. Each had different effort levels (2\u201326 weeks of engineering) and tradeoffs. I recommended the landing page approach \u2014 it let us ship in 8 weeks while preserving existing analytics and content infrastructure. I framed the decision around a principle: time-box investment until we have conviction of value.',
       },
       {
         phase: 'Scoping',
         content:
-          'Defined P0/P1/P2 priorities. Deliberately descoped features stakeholders wanted (drip emails, badging) because they\'d add 4+ weeks without validating the core concept.',
+          'I defined clear P0/P1/P2 prioritization. P0 included the admin program page with resources, ability to share programs, learner experience across web/iOS/Android, progress monitoring, and NPS surveys. I deliberately descoped features like scheduled drip emails and badging as P2 \u2014 even though stakeholders wanted them \u2014 because they would have added 4+ weeks and we needed to validate the core concept first.',
       },
       {
         phase: 'Execution',
         content:
-          'Led a 15-person cross-functional pod across Product, Engineering, Content, Creative, Marketing, Sales Enablement, and CS. Resolved a CS-vs-Content tension by reframing around the user need rather than picking sides. Managed coverage when two key team members went on leave mid-project. Zero escalations to leadership.',
+          'I orchestrated a cross-functional pod of 15+ people spanning Product, Engineering (FE/BE/iOS/Android), Content/Learning Design, Creative, Marketing, Sales Enablement, and Customer Success. I ran weekly pod meetings to coordinate dependencies and track blockers. When the CS team and Content team disagreed on how facilitator resources should work (configurable per client vs. single format), I reframed the decision around the user need: what does the admin need to deploy successfully? We shipped admin-facing defaults with CS tailoring per client relationship. Two key team members went on leave mid-project \u2014 I proactively set up coverage and handoff plans so launches proceeded without escalation.',
       },
       {
         phase: 'Phased GTM',
         content:
-          'Pre-launched at an industry conference with a prototype demo before the product existed. Soft-launched over summer with staggered releases. Hard-launched in fall when buyers returned — with 6–8 weeks of live data already informing positioning.',
+          'I designed a three-phase launch strategy to work around the constraint that summer is historically dead for L&D buyers. Phase 1: pre-launch at the ATD industry conference with a Figma prototype and demo environment, generating early market validation. Phase 2: staggered soft launch of three programs across web, iOS, and Android, timed to engineering readiness. Phase 3: hard launch with prospect email campaigns and admin newsletter inclusion, timed to the fall buying season. This gave us 6\u20138 weeks of live data and customer feedback before the big push.',
+      },
+      {
+        phase: 'Positioning & enablement',
+        content:
+          'Developed outcome-focused positioning around career development \u2014 not celebrity appeal \u2014 to resonate with L&D buyers evaluating ROI. Ran an unmoderated UXR survey with 10 participants comparing three merchandising variants (instructor-forward, outcome-forward, and information-dense) to inform in-product placement: light merchandising on mobile, aggressive on web with homepage, skill page, and dedicated Programs page placement. For the ATD conference pre-launch, created a sales brief, talk track, Figma prototype with a custom demo environment, and one-pager \u2014 giving the sales team a way to demo the concept before the product existed. Ahead of soft launch, built enablement slides, SDR outbound copy, and messaging templates, and ran a sales training kickoff so the team was actively selling before go-live. For hard launch, planned prospect email campaigns and inclusion in the admin newsletter. Post-launch, evolved positioning from \u201cstructured learning paths\u201d to \u201cmeasurable learning outcomes\u201d based on customer feedback showing buyers cared more about completion and skill application than program structure.',
       },
       {
         phase: 'Feedback engine',
         content:
-          'Built four-layer post-launch measurement: product analytics, passive sales call tracking (auto-flagged mentions), structured qualitative feedback from CS/Sales, and module-level effectiveness surveys. Synthesized into 30-day and 90-day Product Reviews with clear invest/hold/pivot recommendations.',
+          'I built a four-layer measurement system to generate a build/hold/pivot recommendation within 90 days. Layer 1: quantitative product data (completion rates, NPS, Weekly Active Admins). Layer 2: passive sales call tracking via Gong smart trackers that auto-flagged Programs mentions \u2014 a creative approach that avoided relying on self-reporting. Layer 3: structured qualitative feedback sheet where CS and Sales logged client reactions, categorized by type (Product Experience, Content, Branding). Layer 4: effectiveness surveys triggered at the module level. I synthesized all four layers into Product Reviews at 30 days and 90 days, presenting an executive summary, quantitative comparison against other content types, qualitative highlights with client quotes, and a clear recommendation.',
       },
     ],
     results: [
-      { metric: '47%', label: 'NPS — higher than existing product' },
-      { metric: '50–60%', label: 'Module completion (vs. ~14% for prior content)' },
-      { metric: '$M+', label: 'Multi-million dollar enterprise pipeline influenced' },
-      { metric: '~50%', label: 'Sales calls mentioning Programs' },
-      { metric: '+51%', label: 'Increase in weekly active admins' },
-      { metric: '60%', label: 'Engaged admins had been inactive in prior months' },
-      { metric: '143%', label: 'OKR exceeded — beat quarterly revenue target' },
+      { metric: '47%', label: 'NPS improvement (44.53 vs. 30.27 for other enterprise learning formats)' },
+      { metric: '50\u201360%', label: 'Module completion rates (vs. ~14% for prior formats)' },
+      { metric: '$5.5M', label: 'Enterprise pipeline influenced' },
+      { metric: '44%', label: 'Sales calls mentioning Programs within 90 days' },
+      { metric: '+51%', label: 'Weekly Active Admin lift' },
+      { metric: '60%', label: 'Of engaged admins had been inactive in prior months, indicating Programs drove re-engagement' },
     ],
     keyFinding:
-      'The celebrity brand got meetings. Outcome-focused positioning closed deals. The biggest unlock wasn\'t the product — it was the systems around it: phased GTM, passive sales tracking, and multi-source feedback loops that built conviction before going broad.',
+      'The celebrity brand got meetings. Outcome-focused positioning closed deals. Admins didn\'t need more content \u2014 they needed structured, deployable solutions that made them look good internally. The biggest unlock wasn\'t the product itself but the positioning shift: framing Programs around measurable career outcomes rather than instructor names.',
   },
   {
     id: '002',

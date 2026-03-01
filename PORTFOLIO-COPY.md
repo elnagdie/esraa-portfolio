@@ -85,43 +85,48 @@ MasterClass, Yelp, Altus Group, Propel Holdings
 ---
 
 ### EXP-001 | MasterClass
-**Can a consumer brand sell structured learning to enterprises?**
+**MasterClass Programs: Building a New Product Category from Zero**
 
 Product Manager | 2023–2024
 Tags: PM, GTM, CROSS-FUNCTIONAL, 0→1
 
-**Hero Metric:** 47% higher NPS than existing product
+**Hero Metrics:**
+- 47% — NPS improvement over existing formats (44.53 vs. 30.27)
+- $5.5M — Enterprise pipeline influenced
+- 44% — Sales call adoption rate
+- +51% — Weekly Active Admin lift
 
 **Hypothesis:** Enterprise buyers would adopt guided learning if positioned around career outcomes — not celebrity appeal.
 
 **The Problem:**
-MasterClass at Work had a content library problem disguised as a retention crisis. L&D admins had access to celebrity-led video content but didn't know what to assign, to whom, or how to structure it into learning programs. CS was spending hours per client manually curating content — a model that didn't scale.
+MasterClass at Work had a rich content library — celebrity instructors, beautifully produced videos — but enterprise L&D admins were overwhelmed. They didn't know what content to assign, to whom, or how to structure it into a learning program. The CS team was spending hours per client manually curating content and mapping it to customer goals, and that model didn't scale. The result: deals stalled, customers churned, and the number-one reason cited by Sales was that admins didn't know how to use the platform.
 
 **Method:**
 
-**Discovery:** Synthesized CS feedback, sales call recordings, and a UXR study with 10 L&D professionals. Found three root problems: admins didn't know what to assign, spent too long assembling content, and lacked awareness of existing tools.
+**Discovery:** I synthesized feedback from CS, sales call recordings, admin survey data, and a UXR study I designed with 10 L&D professionals. The research revealed three core sub-problems: admins didn't know what content to assign, they spent too much time piecing together resources, and they lacked awareness of existing admin tools.
 
-**Build approach:** Evaluated four options (2–26 weeks effort range), recommended a landing page approach that shipped in 8 weeks while preserving existing infrastructure. Principle: time-box investment until we have conviction of value.
+**Build approach:** I evaluated four technical approaches in a Product Review with engineering leadership. We could build Programs as (a) an enhanced viewing experience, (b) a landing page with curated content collections, (c) an entirely new content type, or (d) leverage existing infrastructure. Each had different effort levels (2–26 weeks of engineering) and tradeoffs. I recommended the landing page approach — it let us ship in 8 weeks while preserving existing analytics and content infrastructure. I framed the decision around a principle: time-box investment until we have conviction of value.
 
-**Scoping:** Defined P0/P1/P2 priorities. Deliberately descoped features stakeholders wanted (drip emails, badging) because they'd add 4+ weeks without validating the core concept.
+**Scoping:** I defined clear P0/P1/P2 prioritization. P0 included the admin program page with resources, ability to share programs, learner experience across web/iOS/Android, progress monitoring, and NPS surveys. I deliberately descoped features like scheduled drip emails and badging as P2 — even though stakeholders wanted them — because they would have added 4+ weeks and we needed to validate the core concept first.
 
-**Execution:** Led a 15-person cross-functional pod across Product, Engineering, Content, Creative, Marketing, Sales Enablement, and CS. Resolved a CS-vs-Content tension by reframing around the user need rather than picking sides. Managed coverage when two key team members went on leave mid-project. Zero escalations to leadership.
+**Execution:** I orchestrated a cross-functional pod of 15+ people spanning Product, Engineering (FE/BE/iOS/Android), Content/Learning Design, Creative, Marketing, Sales Enablement, and Customer Success. I ran weekly pod meetings to coordinate dependencies and track blockers. When the CS team and Content team disagreed on how facilitator resources should work (configurable per client vs. single format), I reframed the decision around the user need: what does the admin need to deploy successfully? We shipped admin-facing defaults with CS tailoring per client relationship. Two key team members went on leave mid-project — I proactively set up coverage and handoff plans so launches proceeded without escalation.
 
-**Phased GTM:** Pre-launched at an industry conference with a prototype demo before the product existed. Soft-launched over summer with staggered releases. Hard-launched in fall when buyers returned — with 6–8 weeks of live data already informing positioning.
+**Phased GTM:** I designed a three-phase launch strategy to work around the constraint that summer is historically dead for L&D buyers. Phase 1: pre-launch at the ATD industry conference with a Figma prototype and demo environment, generating early market validation. Phase 2: staggered soft launch of three programs across web, iOS, and Android, timed to engineering readiness. Phase 3: hard launch with prospect email campaigns and admin newsletter inclusion, timed to the fall buying season. This gave us 6–8 weeks of live data and customer feedback before the big push.
 
-**Feedback engine:** Built four-layer post-launch measurement: product analytics, passive sales call tracking (auto-flagged mentions), structured qualitative feedback from CS/Sales, and module-level effectiveness surveys. Synthesized into 30-day and 90-day Product Reviews with clear invest/hold/pivot recommendations.
+**Positioning & enablement:** Developed outcome-focused positioning around career development — not celebrity appeal — to resonate with L&D buyers evaluating ROI. Ran an unmoderated UXR survey with 10 participants comparing three merchandising variants (instructor-forward, outcome-forward, and information-dense) to inform in-product placement: light merchandising on mobile, aggressive on web with homepage, skill page, and dedicated Programs page placement. For the ATD conference pre-launch, created a sales brief, talk track, Figma prototype with a custom demo environment, and one-pager — giving the sales team a way to demo the concept before the product existed. Ahead of soft launch, built enablement slides, SDR outbound copy, and messaging templates, and ran a sales training kickoff so the team was actively selling before go-live. For hard launch, planned prospect email campaigns and inclusion in the admin newsletter. Post-launch, evolved positioning from "structured learning paths" to "measurable learning outcomes" based on customer feedback showing buyers cared more about completion and skill application than program structure.
+
+**Feedback engine:** I built a four-layer measurement system to generate a build/hold/pivot recommendation within 90 days. Layer 1: quantitative product data (completion rates, NPS, Weekly Active Admins). Layer 2: passive sales call tracking via Gong smart trackers that auto-flagged Programs mentions — a creative approach that avoided relying on self-reporting. Layer 3: structured qualitative feedback sheet where CS and Sales logged client reactions, categorized by type (Product Experience, Content, Branding). Layer 4: effectiveness surveys triggered at the module level. I synthesized all four layers into Product Reviews at 30 days and 90 days, presenting an executive summary, quantitative comparison against other content types, qualitative highlights with client quotes, and a clear recommendation.
 
 **Results:**
-- 47% — NPS — higher than existing product
-- 50–60% — Module completion (vs. ~14% for prior content)
-- $M+ — Multi-million dollar enterprise pipeline influenced
-- ~50% — Sales calls mentioning Programs
-- +51% — Increase in weekly active admins
-- 60% — Engaged admins had been inactive in prior months
-- 143% — OKR exceeded — beat quarterly revenue target
+- 47% — NPS improvement (44.53 vs. 30.27 for other enterprise learning formats)
+- 50–60% — Module completion rates (vs. ~14% for prior formats)
+- $5.5M — Enterprise pipeline influenced
+- 44% — Sales calls mentioning Programs within 90 days
+- +51% — Weekly Active Admin lift
+- 60% — Of engaged admins had been inactive in prior months, indicating Programs drove re-engagement
 
 **Key Finding:**
-The celebrity brand got meetings. Outcome-focused positioning closed deals. The biggest unlock wasn't the product — it was the systems around it: phased GTM, passive sales tracking, and multi-source feedback loops that built conviction before going broad.
+The celebrity brand got meetings. Outcome-focused positioning closed deals. Admins didn't need more content — they needed structured, deployable solutions that made them look good internally. The biggest unlock wasn't the product itself but the positioning shift: framing Programs around measurable career outcomes rather than instructor names.
 
 ---
 
