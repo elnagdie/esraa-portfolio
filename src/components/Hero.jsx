@@ -1,7 +1,7 @@
 import { motion } from 'framer-motion';
 
 const metrics = [
-  { value: '8+', unit: 'yrs', label: 'in product & GTM' },
+  { value: '10', unit: 'yrs', label: 'in product & GTM' },
   { value: '750+', unit: '', label: 'companies on platforms I\'ve launched' },
   { value: '98%', unit: '', label: 'reduction in creation time' },
   { value: '19%', unit: '', label: 'engagement lift from my last experiment' },
@@ -44,12 +44,6 @@ export default function Hero() {
         animate="visible"
         className="relative z-10 max-w-4xl"
       >
-        {/* Field label */}
-        <motion.div variants={itemVariants} className="flex items-center gap-3 mb-8">
-          <span className="w-8 h-px bg-amber-text/40" />
-          <span className="section-label">Field Researcher — Product, Growth & GTM</span>
-        </motion.div>
-
         {/* Name */}
         <motion.h1
           variants={itemVariants}
@@ -58,20 +52,12 @@ export default function Hero() {
           Esraa Elnagdi
         </motion.h1>
 
-        {/* Main headline */}
-        <motion.h2
-          variants={itemVariants}
-          className="font-serif text-3xl md:text-5xl lg:text-6xl text-navy/80 mb-3 leading-tight"
-        >
-          Biochemist turned product builder.
-        </motion.h2>
-
         {/* Subheadline */}
         <motion.p
           variants={itemVariants}
-          className="font-serif italic text-2xl md:text-3xl text-amber-text mb-8 leading-tight"
+          className="font-serif text-xl md:text-2xl text-amber-text mb-6 leading-snug"
         >
-          I run experiments that grow businesses.
+          Biochemist turned product builder.
         </motion.p>
 
         {/* Bio paragraph */}
@@ -79,9 +65,7 @@ export default function Hero() {
           variants={itemVariants}
           className="font-sans text-base md:text-lg text-navy/55 max-w-2xl leading-relaxed mb-10"
         >
-          I studied Biochemistry at the University of Toronto — not for the career path, but for the way of thinking.
-          Hypothesize. Test. Follow the evidence. Think in systems. I've been applying that scientific method to product
-          strategy, go-to-market, and growth ever since.
+          10 years translating the gap between what teams build and why customers care. I've launched platforms from 0 to 8,000+ users, shipped learning programs with 70% completion rates, and driven 19% engagement lifts through experimentation. Across EdTech, PropTech, FinTech, and consumer apps — same instinct every time: start with the customer, understand the system, build something better.
         </motion.p>
 
         {/* CTA buttons */}
@@ -90,13 +74,13 @@ export default function Hero() {
             onClick={() => handleScrollTo('experiments')}
             className="btn-primary"
           >
-            View Experiments
+            View Work
           </button>
           <button
-            onClick={() => handleScrollTo('about')}
+            onClick={() => handleScrollTo('contact')}
             className="btn-secondary"
           >
-            The Full Story
+            Get in Touch
           </button>
         </motion.div>
 

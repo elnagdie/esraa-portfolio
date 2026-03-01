@@ -64,11 +64,7 @@ export default function SideExperiments() {
         transition={{ duration: 0.7 }}
         className="mb-16"
       >
-        <div className="flex items-center gap-3 mb-4">
-          <span className="w-8 h-px bg-amber-text/40" />
-          <span className="section-label">Side Lab</span>
-        </div>
-        <h2 className="section-headline mb-3">Building in Public</h2>
+        <h2 className="section-headline mb-3">Side Lab</h2>
       </motion.div>
 
       {/* AI Skills */}

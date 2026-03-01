@@ -2,10 +2,10 @@ import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 
 const navItems = [
-  { label: 'Field Notes', href: '/#about' },
+  { label: 'Origin Story', href: '/#about' },
   { label: 'Experiments', href: '/#experiments' },
   { label: 'Side Lab', href: '/#side-experiments' },
-  { label: 'Inquire', href: '/#contact' },
+  { label: 'Contact', href: '/#contact' },
 ];
 
 export default function Nav() {

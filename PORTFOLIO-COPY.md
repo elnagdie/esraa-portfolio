@@ -7,36 +7,32 @@ All text content from the live portfolio at https://esraa-elnagdi-portfolio.netl
 ## NAVIGATION
 
 - E.E. | The Lab
-- Field Notes
+- Origin Story
 - Experiments
 - Side Lab
-- Inquire
+- Contact
 
 ---
 
 ## HERO
 
-**Label:** Field Researcher — Product, Growth & GTM
-
 **Name:** Esraa Elnagdi
 
 **Headline:** Biochemist turned product builder.
 
-**Subheadline:** I run experiments that grow businesses.
+**Bio:** 10 years translating the gap between what teams build and why customers care. I've launched platforms from 0 to 8,000+ users, shipped learning programs with 70% completion rates, and driven 19% engagement lifts through experimentation. Across EdTech, PropTech, FinTech, and consumer apps — same instinct every time: start with the customer, understand the system, build something better.
 
-**Bio:** I studied Biochemistry at the University of Toronto — not for the career path, but for the way of thinking. Hypothesize. Test. Follow the evidence. Think in systems. I've been applying that scientific method to product strategy, go-to-market, and growth ever since.
-
-**Buttons:** View Experiments | The Full Story
+**Buttons:** View Work | Get in Touch
 
 **Metrics:**
-- 8+ yrs — in product & GTM
+- 10 yrs — in product & GTM
 - 750+ — companies on platforms I've launched
 - 98% — reduction in creation time
 - 19% — engagement lift from my last experiment
 
 ---
 
-## FIELD NOTES — The Origin Story
+## Origin Story
 
 I've always been a translator.
 
@@ -54,7 +50,7 @@ At Yelp, I learned the power of experimentation, partnering with Data Science to
 
 At MasterClass, I brought it all together: leading cross-functional teams of 10+, shipping enterprise learning programs with completion rates 4x the existing product, building an internal tool that cut content curation by 98%, developing GTM strategy, and beating revenue targets by 10% YoY.
 
-I've translated across languages, industries, and audiences. From Arabic to English, from biochemistry labs to engineering sprints, from technical complexity to business outcomes. I'm a first-generation Canadian, Egyptian by origin, fluent in Arabic and English. I lead with active listening and empathy. I thrive in the space between chaos and clarity, building the systems that turn one into the other.
+I've translated across languages, industries, and audiences. From Arabic to English, from biochemistry labs to engineering sprints, from technical complexity to business outcomes. I'm a first-generation Canadian, Egyptian by origin, I lead with active listening and empathy. I thrive in the space between chaos and clarity, building the systems that turn one into the other.
 
 ### Lab Profile — The Planner / Translator
 PRIOS Assessment, 2025
@@ -84,9 +80,7 @@ MasterClass, Yelp, Altus Group, Propel Holdings
 
 ---
 
-## EXPERIMENTS — Hypothesize. Test. Ship. Measure.
-
-Each project started with a question. Here's what I found.
+## Experiments
 
 ---
 
@@ -253,7 +247,7 @@ The predictive model told a completely different story than our assumptions. Set
 
 ---
 
-## SIDE LAB — Building in Public
+## Side Lab
 
 **AI Skills:**
 - Competitive Analysis Skill — Automates end-to-end competitive analysis for 2–5 companies across 13 dimensions. Researches positioning, pricing, features, and customer proof, then generates a 16-slide deck. One command replaces hours of manual research. (github.com/elnagdie/competitive-analysis)
@@ -265,9 +259,7 @@ The predictive model told a completely different story than our assumptions. Set
 
 ---
 
-## INQUIRE — Ready to run an experiment together?
-
-I'm currently exploring Senior PM, PMM, and TPM opportunities at ambitious companies. Let's see if there's a fit.
+## Let's Build Something
 
 - Email: esraa.y.elnagdi@gmail.com
 - LinkedIn: linkedin.com/in/esraa-elnagdi

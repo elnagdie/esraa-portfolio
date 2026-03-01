@@ -58,11 +58,7 @@ export default function About() {
       >
         {/* Section header */}
         <div className="mb-16">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="w-8 h-px bg-amber-text/40" />
-            <span className="section-label">Field Notes</span>
-          </div>
-          <h2 className="section-headline">The Origin Story</h2>
+          <h2 className="section-headline">Origin Story</h2>
         </div>
 
         {/* Two-column layout */}
@@ -78,7 +74,7 @@ export default function About() {
               `At Altus Group, I was the Product Owner on a commercial real estate data platform, and with no PMM function, I built that too. I interviewed customers, developed segmented positioning for three buyer personas, created 30+ help articles, and trained Sales on persona-specific selling. The platform grew from 0 to 750+ companies and 8,000+ users.`,
               `At Yelp, I learned the power of experimentation, partnering with Data Science to build predictive models and running A/B tests that drove a 19% engagement lift.`,
               `At MasterClass, I brought it all together: leading cross-functional teams of 10+, shipping enterprise learning programs with completion rates 4x the existing product, building an internal tool that cut content curation by 98%, developing GTM strategy, and beating revenue targets by 10% YoY.`,
-              `I've translated across languages, industries, and audiences. From Arabic to English, from biochemistry labs to engineering sprints, from technical complexity to business outcomes. I'm a first-generation Canadian, Egyptian by origin, fluent in Arabic and English. I lead with active listening and empathy. I thrive in the space between chaos and clarity, building the systems that turn one into the other.`,
+              `I've translated across languages, industries, and audiences. From Arabic to English, from biochemistry labs to engineering sprints, from technical complexity to business outcomes. I'm a first-generation Canadian, Egyptian by origin, I lead with active listening and empathy. I thrive in the space between chaos and clarity, building the systems that turn one into the other.`,
             ].map((paragraph, i) => (
               <motion.p
                 key={i}

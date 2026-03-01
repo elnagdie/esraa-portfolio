@@ -83,14 +83,7 @@ export default function Experiments() {
         transition={{ duration: 0.7 }}
         className="mb-16"
       >
-        <div className="flex items-center gap-3 mb-4">
-          <span className="w-8 h-px bg-amber-text/40" />
-          <span className="section-label">Experiments</span>
-        </div>
-        <h2 className="section-headline mb-3">Hypothesize. Test. Ship. Measure.</h2>
-        <p className="font-sans text-base text-navy/50 max-w-xl">
-          Each project started with a question. Here's what I found.
-        </p>
+        <h2 className="section-headline mb-3">Experiments</h2>
       </motion.div>
 
       {/* Cards grid */}

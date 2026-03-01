@@ -33,17 +33,7 @@ export default function Contact() {
       >
         {/* Header */}
         <div className="mb-14">
-          <div className="flex items-center gap-3 mb-4">
-            <span className="w-8 h-px bg-amber-text/40" />
-            <span className="section-label">Inquire</span>
-          </div>
-          <h2 className="font-serif text-4xl md:text-6xl text-navy leading-tight mb-4 max-w-3xl">
-            Ready to run an experiment together?
-          </h2>
-          <p className="font-sans text-base md:text-lg text-navy/55 max-w-xl leading-relaxed">
-            I'm currently exploring Senior PM, PMM, and TPM opportunities at ambitious companies.
-            Let's see if there's a fit.
-          </p>
+          <h2 className="section-headline">Let's Build Something</h2>
         </div>
 
         {/* Contact links */}
