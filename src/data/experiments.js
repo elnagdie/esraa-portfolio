@@ -189,12 +189,12 @@ export const experiments = [
       {
         phase: 'Onboarding A/B testing',
         content:
-          'Despite setup not being the primary driver, the flow still had 40% drop-off. Tested three variants across 5,000 users each. The winner: reordering steps so users saw value before being asked to pay. Combined best elements from multiple variants and iterated across all platforms to achieve +10% setup rate improvement.',
+          'Despite setup not being the primary driver, the flow still had 40% drop-off. Tested three variants. The winner: reordering steps so users saw value before being asked to pay. Combined best elements from multiple variants and iterated across all platforms to achieve +10% setup rate improvement.',
       },
       {
         phase: 'Messaging experimentation',
         content:
-          'The recommendations feature was underperforming due to positioning, not product quality. Tested three messaging approaches with 10,000 users each. Functional messaging ("You have 3 actions"): low engagement. Value messaging ("Respond faster to attract customers"): moderate. ROI messaging ("Businesses that do this get 20% more messages"): 4x the action rate of functional. Repositioned the entire feature around data-driven business improvement.',
+          'The recommendations feature was underperforming due to positioning, not product quality. Tested three messaging approaches. Functional messaging ("You have 3 actions"): low engagement. Value messaging ("Respond faster to attract customers"): moderate. ROI messaging ("Businesses that do this get 20% more messages"): 4x the action rate of functional. Repositioned the entire feature around data-driven business improvement.',
       },
       {
         phase: 'Opportunity sizing',

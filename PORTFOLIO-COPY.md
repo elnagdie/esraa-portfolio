@@ -25,10 +25,10 @@ All text content from the live portfolio at https://esraa-elnagdi-portfolio.netl
 **Buttons:** View Work | Get in Touch
 
 **Metrics:**
-- 10 yrs — in product & GTM
-- 750+ — companies on platforms I've launched
-- 98% — reduction in creation time
-- 19% — engagement lift from my last experiment
+- 750+ — companies adopted platforms I launched
+- $5.5M — enterprise pipeline influenced
+- 19% — engagement lift through experimentation
+- 98% — reduction in operational effort through tooling
 
 ---
 
@@ -231,9 +231,9 @@ Yelp for Business had flat WAU growth. The team assumed onboarding was the bottl
 
 **Predictive modeling:** Partnered with Data Science to build models identifying success predictors for business owners. Used Poisson regression with confounding variable controls. The result contradicted the team's core assumption: responding to reviews created a 2.76x pageview multiplier and responding to messages created 2.28x — but setup completion was NOT a significant predictor of long-term engagement.
 
-**Onboarding A/B testing:** Despite setup not being the primary driver, the flow still had 40% drop-off. Tested three variants across 5,000 users each. The winner: reordering steps so users saw value before being asked to pay. Combined best elements from multiple variants and iterated across all platforms to achieve +10% setup rate improvement.
+**Onboarding A/B testing:** Despite setup not being the primary driver, the flow still had 40% drop-off. Tested three variants. The winner: reordering steps so users saw value before being asked to pay. Combined best elements from multiple variants and iterated across all platforms to achieve +10% setup rate improvement.
 
-**Messaging experimentation:** The recommendations feature was underperforming due to positioning, not product quality. Tested three messaging approaches with 10,000 users each. Functional messaging ("You have 3 actions"): low engagement. Value messaging ("Respond faster to attract customers"): moderate. ROI messaging ("Businesses that do this get 20% more messages"): 4x the action rate of functional. Repositioned the entire feature around data-driven business improvement.
+**Messaging experimentation:** The recommendations feature was underperforming due to positioning, not product quality. Tested three messaging approaches. Functional messaging ("You have 3 actions"): low engagement. Value messaging ("Respond faster to attract customers"): moderate. ROI messaging ("Businesses that do this get 20% more messages"): 4x the action rate of functional. Repositioned the entire feature around data-driven business improvement.
 
 **Opportunity sizing:** Identified a large pool of dormant business owners visiting the consumer site but not engaging with their business profiles. Launched a feature targeting them, generating statistically significant increases in engagement. Built self-service dashboards and a 1-year roadmap targeting 10% WAU growth.
 
