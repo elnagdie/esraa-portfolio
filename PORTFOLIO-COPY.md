@@ -85,7 +85,7 @@ MasterClass, Yelp, Altus Group, Propel Holdings
 ---
 
 ### EXP-001 | MasterClass
-**MasterClass Programs: Building a New Product Category from Zero**
+**Can a consumer brand sell structured learning to enterprises?**
 
 Product Manager | 2023–2024
 Tags: PM, GTM, CROSS-FUNCTIONAL, 0→1
@@ -147,9 +147,9 @@ CSMs were afraid of the existing admin tool — no guardrails, no validation, re
 
 **Method:**
 
-**Options analysis:** Evaluated three approaches at a formal Product Review. Enhancing ingestion sheets still required Eng. Enhancing the admin tool was "an uphill fight" with worse UX. Building a dedicated creator in the admin platform was the clear winner — and architecturally close to eventually being customer-facing.
+**Options analysis:** Evaluated three approaches at a formal Product Review. Enhancing the data submission process still required Eng. Enhancing the admin tool was "an uphill fight" with worse UX. Building a dedicated creator in the admin platform was the clear winner — and architecturally close to eventually being customer-facing.
 
-**Fear-first design:** The core UX insight was that CSMs were afraid of breaking things. Every design decision addressed this: a two-phase publishing workflow (publish to internal demo account first, then to client), validation modals showing exactly what's missing, double-confirm on edits to published playlists, and a CSM-scoped role that hid dangerous permissions.
+**Guardrail-driven design:** The core UX insight was that CSMs were afraid of breaking things. Every design decision addressed this: a two-phase publishing workflow (publish to internal demo account first, then to client), validation modals showing exactly what's missing, double-confirm on edits to published playlists, and a CSM-scoped role that hid dangerous permissions.
 
 **Delivery under constraints:** One of five concurrent initiatives. Shared FE resources with a partnership that had a non-negotiable deadline. Accepted the constraint, adjusted timeline, and overlapped UAT with test engineering when FE fell behind — rather than cutting scope.
 
@@ -161,11 +161,12 @@ CSMs were afraid of the existing admin tool — no guardrails, no validation, re
 
 **Results:**
 - 98% — Creation time reduction (4–5 hours → under 5 minutes)
+- 190+ — Playlists created in the first 90 days post-launch
 - #1 — Highest 30D/90D engagement of all enterprise content types
-- Top — NPS — higher than both existing playlists and Programs
-- 100% — CSM team self-sufficient from day one
+- Top NPS — Higher than both existing playlists and Programs
 - 50%+ — Consumers were admin-assigned (intentional learning)
 - 14 — Pre-launch bugs caught, all critical issues resolved
+- CSM team self-sufficient from day one — zero training friction
 
 **Key Finding:**
 The best internal tools eliminate fear, not just friction. Two-phase publishing, validation modals, scoped permissions, and peer review all addressed one root issue: CSMs were afraid of breaking things. The failed documentation attempt proved the problem was never training — it was the tool. Once fear was removed, adoption was instant.

@@ -3,7 +3,7 @@ export const experiments = [
     id: '001',
     number: 'EXP-001',
     company: 'MasterClass',
-    title: 'MasterClass Programs: Building a New Product Category from Zero',
+    title: 'Can a consumer brand sell structured learning to enterprises?',
     hypothesis:
       'Enterprise buyers would adopt guided learning if positioned around career outcomes — not celebrity appeal.',
     keyMetric: '47%',
@@ -78,10 +78,10 @@ export const experiments = [
       {
         phase: 'Options analysis',
         content:
-          'Evaluated three approaches at a formal Product Review. Enhancing ingestion sheets still required Eng. Enhancing the admin tool was "an uphill fight" with worse UX. Building a dedicated creator in the admin platform was the clear winner — and architecturally close to eventually being customer-facing.',
+          'Evaluated three approaches at a formal Product Review. Enhancing the data submission process still required Eng. Enhancing the admin tool was "an uphill fight" with worse UX. Building a dedicated creator in the admin platform was the clear winner — and architecturally close to eventually being customer-facing.',
       },
       {
-        phase: 'Fear-first design',
+        phase: 'Guardrail-driven design',
         content:
           'The core UX insight was that CSMs were afraid of breaking things. Every design decision addressed this: a two-phase publishing workflow (publish to internal demo account first, then to client), validation modals showing exactly what\'s missing, double-confirm on edits to published playlists, and a CSM-scoped role that hid dangerous permissions.',
       },
@@ -107,10 +107,10 @@ export const experiments = [
       },
     ],
     results: [
-      { metric: '98%', label: 'Creation time reduction (4–5 hours → under 5 minutes)' },
+      { metric: '98%', label: 'Creation time reduction (4\u20135 hours \u2192 under 5 minutes)' },
+      { metric: '190+', label: 'Playlists created in the first 90 days post-launch' },
       { metric: '#1', label: 'Highest 30D/90D engagement of all enterprise content types' },
-      { metric: 'Top', label: 'NPS — higher than both existing playlists and Programs' },
-      { metric: '100%', label: 'CSM team self-sufficient from day one' },
+      { metric: 'Top NPS', label: 'Higher than both existing playlists and Programs' },
       { metric: '50%+', label: 'Consumers were admin-assigned (intentional learning)' },
       { metric: '14', label: 'Pre-launch bugs caught, all critical issues resolved' },
     ],
