@@ -36,12 +36,6 @@ function ExperimentCard({ exp, index }) {
         {exp.title}
       </h3>
 
-      {/* Hypothesis */}
-      <p className="font-sans text-sm text-navy/50 leading-relaxed mb-6 line-clamp-2">
-        <span className="font-mono text-[9px] tracking-wider uppercase text-teal-dim mr-2">H:</span>
-        {exp.hypothesis}
-      </p>
-
       {/* Key metric */}
       <div className="mb-5">
         <div className="font-serif text-4xl text-amber-text leading-none mb-0.5">
