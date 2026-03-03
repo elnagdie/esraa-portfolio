@@ -2,7 +2,7 @@
 
 Biochemist turned product builder. 10 years translating the gap between what teams build and why customers care.
 
-**Live site:** [esraa-elnagdi-portfolio.netlify.app](https://esraa-elnagdi-portfolio.netlify.app)
+**Live site:** [elnagdie.github.io/esraa-portfolio](https://elnagdie.github.io/esraa-portfolio)
 
 ## What's inside
 
@@ -26,7 +26,7 @@ Biochemist turned product builder. 10 years translating the gap between what tea
 - Tailwind CSS
 - Framer Motion
 - React Router
-- Deployed on Netlify
+- Deployed on GitHub Pages
 
 ## Running locally
 

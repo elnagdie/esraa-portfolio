@@ -65,10 +65,6 @@ export default function CaseStudy() {
               <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-navy/35 mb-0.5">Role</div>
               <div className="font-sans text-sm text-navy/55">{exp.role}</div>
             </div>
-            <div>
-              <div className="font-mono text-[9px] tracking-[0.2em] uppercase text-navy/35 mb-0.5">Timeline</div>
-              <div className="font-sans text-sm text-navy/55">{exp.timeline}</div>
-            </div>
           </div>
         </div>
       </div>
