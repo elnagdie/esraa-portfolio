@@ -5,7 +5,7 @@ import CaseStudy from './pages/CaseStudy';
 
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/esraa-portfolio">
       <div className="grain">
         <Nav />
         <Routes>
